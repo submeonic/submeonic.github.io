@@ -89,6 +89,7 @@ a{
     }
     .content {
         width: 100%;
+        border-top: none;
     }
 }
 
