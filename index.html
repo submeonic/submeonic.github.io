@@ -102,7 +102,7 @@
                     <h3>FEATURED PROJECTS</h3>
                     <div class="projects-view-container">
                         <!-- Repeat this block for each project -->
-                        <div class="project-container" onclick="showProjectDetails('project1')">
+                        <div class="project-container selected" onclick="showProjectDetails('project1')">
                             <h4>Project 1 Title</h4>
                             <img src="assets/project_thumbnails/placeholder.png" alt="Project 1 Thumbnail" class="project-thumbnail">
                         </div>
@@ -143,9 +143,36 @@
             <section id="contact" class="py-5">
                 <div class="container">
                     <h3>CONTACT</h3>
-                    <a href="mailto:chasepfranklin@gmail.com">Email</a>
-                    <br />
-                    <a href="https://github.com/submeonic">Github</a>
+                    <div class="row" id="links-container">
+                        <div class="col-md-6">
+                            <a href="path/to/your-resume.pdf" class="social-link" download="Your-Name-Resume.pdf">
+                                <i class="fa-solid fa-file-pdf"></i>
+                                Resume
+                            </a>
+                            <a href="mailto:chasepfranklin@gmail.com" class="social-link">
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: chasepfranklin@gmail.com
+                            </a>
+                            <a href="https://linkedin.com/in/chase-franklin/" class="social-link">
+                                <i class="fa-brands fa-linkedin"></i>
+                                LinkedIn: chase-franklin
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="https://github.com/submeonic" class="social-link">
+                                <i class="fa-brands fa-github"></i>
+                                GitHub: submeonic
+                            </a>
+                            <a href="https://submeonic.itch.io/" class="social-link">
+                                <i class="fa-brands fa-itch-io"></i>
+                                Itch.io: submeonic
+                            </a>
+                            <a href="https://www.instagram.com/submeonic/" class="social-link">
+                                <i class="fa-brands fa-instagram"></i>
+                                Instagram: @submeonic
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
 

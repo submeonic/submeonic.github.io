@@ -228,6 +228,8 @@ a{
     overflow-x: auto;
     white-space: nowrap;
     background-color: #292929; /* Matches body background */
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .project-container {
@@ -236,7 +238,6 @@ a{
     margin: 10px;
     background-color: #333; /* Matches the style of other containers */
     color: #EFEFDC; /* Matches text color */
-    border: 1px solid #ccc;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px; /* Matches styling of h3 */
     overflow: hidden; /* For border-radius to affect child elements */
@@ -277,5 +278,36 @@ a{
     background-color: rgba(239, 239, 220, 0.1); /* Slightly change background */
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5); /* Enhanced shadow */
 }
+
+.social-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #EFEFDC; /* Matches text color */
+    font-family: "Overpass", sans-serif;
+    font-weight: 400;
+    font-size: 16px; /* Adjust as needed */
+    margin-bottom: 10px; /* Spacing between different social links */
+    display: flex; /* Aligns icon with text */
+    align-items:baseline; /* Aligns icon vertically with text */
+    padding-left: 10%;
+}
+
+.social-link i {
+    margin-right: 10px;
+    width: 30px;
+    color: #EFEFDC; /* Matches text color */
+    font-size: 30px; /* Slightly larger icon size */
+}
+
+/* Hover effect for the social links */
+.social-link:hover{
+    color: #B8B8A4; /* Lighter color on hover */
+}
+
+#links-container {
+    padding-top: 20px;
+}
+
 
 
