@@ -66,28 +66,53 @@ a{
 }
 
 .page-container {
-    display: flex;
+    display:flex;
+    width: 100%;
 }
 
-.border-image {
+.space {
     width: 20%;
-    background-repeat: repeat-y;
     border-top: #333 solid 10px;
     background-color: #333;
 }
 
+.content {
+    width: 80%;
+    padding: 20px;
+    border: #333 solid 10px;
+}
+
 @media (max-width: 950px) {
-    .border-image {
-        background-image: none;
+    .space {
         border: none;
-        width: 0%;
+        width: 0;
+    }
+    .content {
+        width: 100%;
     }
 }
 
-.content {
-    width: 100%;
-    padding: 20px;
-    border: #333 solid 10px;
+::-webkit-scrollbar {
+    width: 10px; /* Adjust the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #333; /* Scrollbar track color */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #EFEFDC; /* Scrollbar handle color */
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #B8B8A4; /* Color on hover */
+}
+
+/* For other browsers like Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #EFEFDC #333; /* thumb and track color */
 }
 
 .sticky-navbar {
@@ -195,6 +220,61 @@ a{
         padding: 20px;
         margin: 0 auto;
     }
+}
+
+.projects-view-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: #292929; /* Matches body background */
+}
+
+.project-container {
+    flex: none;
+    width: 400px; /* Adjust as needed */
+    margin: 10px;
+    background-color: #333; /* Matches the style of other containers */
+    color: #EFEFDC; /* Matches text color */
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Matches styling of h3 */
+    overflow: hidden; /* For border-radius to affect child elements */
+}
+
+@media (max-width: 600px) {
+    .project-container {
+        width: 250px; /* Adjust as needed */
+    }
+}
+
+.project-container h4 { /* Assuming h4 for project titles */
+    font-size: 20px; /* Adjust as needed */
+    margin: 10px 0;
+    padding: 0 10px;
+    font-family: "Overpass", sans-serif;
+    font-weight: 800;
+}
+
+.project-thumbnail {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-details-container {
+    background-color: #333; /* Matches the style of other containers */
+    color: #EFEFDC; /* Matches text color */
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    border-radius: 10px; /* Consistent with other elements */
+    font-family: "Kode Mono", monospace; /* Matches paragraph style */
+}
+
+.project-container.selected {
+    border: 2px solid #EFEFDC; /* Highlight with a border */
+    background-color: rgba(239, 239, 220, 0.1); /* Slightly change background */
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5); /* Enhanced shadow */
 }
 
 

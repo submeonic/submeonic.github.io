@@ -37,7 +37,7 @@
         </div>
     </div>
     <div class="page-container">
-        <div class="border-image"></div>
+        <div class="space"></div>
         <div class="content">
             <nav class="navbar navbar-expand-lg">
                 <div class="container" id="navbar-container">
@@ -89,8 +89,37 @@
 
             <section id="projects" class="py-5">
                 <div class="container">
-                    <h3>PROJECTS</h3>
-                    <p>Website in progress</p>
+                    <h3>FEATURED PROJECTS</h3>
+                    <div class="projects-view-container">
+                        <!-- Repeat this block for each project -->
+                        <div class="project-container" onclick="showProjectDetails('project1')">
+                            <h4>Project 1 Title</h4>
+                            <img src="assets/project_thumbnails/placeholder.png" alt="Project 1 Thumbnail" class="project-thumbnail">
+                        </div>
+                        <div class="project-container" onclick="showProjectDetails('project2')">
+                            <h4>Project 2 Title</h4>
+                            <img src="assets/project_thumbnails/placeholder.png" alt="Project 2 Thumbnail" class="project-thumbnail">
+                        </div>
+                        <div class="project-container" onclick="showProjectDetails('project3')">
+                            <h4>Project 3 Title</h4>
+                            <img src="assets/project_thumbnails/placeholder.png" alt="Project 3 Thumbnail" class="project-thumbnail">
+                        </div>
+                        <div class="project-container" onclick="showProjectDetails('project4')">
+                            <h4>Project 4 Title</h4>
+                            <img src="assets/project_thumbnails/placeholder.png" alt="Project 4 Thumbnail" class="project-thumbnail">
+                        </div>
+                        <div class="project-container" onclick="showProjectDetails('project5')">
+                            <h4>Project 5 Title</h4>
+                            <img src="assets/project_thumbnails/placeholder.png" alt="Project 5 Thumbnail" class="project-thumbnail">
+                        </div>
+                        <div class="project-container" onclick="showProjectDetails('project6')">
+                            <h4>Project 6 Title</h4>
+                            <img src="assets/project_thumbnails/placeholder.png" alt="Project 6 Thumbnail" class="project-thumbnail">
+                        </div>
+                    </div>
+                    <div class="project-details-container" id="project-details">
+                        <!-- Project details will be dynamically inserted here -->
+                    </div>
                 </div>
             </section>
 
@@ -116,7 +145,7 @@
                 </div>
             </footer>
         </div>
-        <div class="border-image"></div>
+        <div class="space"></div>
     </div>
 
     <!-- <i class="fa-solid fa-yin-yang"></i>
@@ -179,6 +208,49 @@
                 }
             }
         });
+    </script>
+
+    <!--Project Selection Indication-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const projects = document.querySelectorAll('.project-container');
+
+            projects.forEach(project => {
+                project.addEventListener('click', function() {
+                    // Remove 'selected' class from all projects
+                    projects.forEach(p => p.classList.remove('selected'));
+                    // Add 'selected' class to clicked project
+                    this.classList.add('selected');
+                    // Optional: Add logic to display project details
+                });
+            });
+        });
+    </script>
+
+    <!--Project Detail Expand Example-->
+    <script>
+        function showProjectDetails(projectId) {
+            var detailsContainer = document.getElementById('project-details');
+            
+            // Example details. You can fetch these from a server or define them here.
+            var projectDetails = {
+                'project1': {
+                    title: 'Project 1',
+                    writeup: 'Description of Project 1...',
+                    videoEmbed: '<iframe src="video_url"></iframe>'
+                }
+                // ... other projects ...
+            };
+
+            var details = projectDetails[projectId];
+            if (details) {
+                detailsContainer.innerHTML = `
+                    <h4>${details.title}</h4>
+                    <p>${details.writeup}</p>
+                    ${details.videoEmbed}
+                `;
+            }
+        }
     </script>
 </body>
 
