@@ -31,6 +31,7 @@
 <body>
     <div class="header">
         <div class="header-container">
+            <img src="assets/HeaderBackground.png" alt="Background" class="header-background-image">
             <h1>CHASE FRANKLIN</h1>
             <h2>IMMERSIVE DEVELOPER</h2>
         </div>
@@ -40,7 +41,7 @@
         <div class="content">
             <nav class="navbar navbar-expand-lg">
                 <div class="container" id="navbar-container">
-                    <a class="navbar-brand">Portfolio</a>
+                    <a class="navbar-brand">PORTFOLIO</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fa fa-ravelry"></i>
@@ -48,13 +49,13 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="#about">About</a>
+                                <a class="nav-link" href="#about">ABOUT</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#projects">Projects</a>
+                                <a class="nav-link" href="#projects">PROJECTS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact</a>
+                                <a class="nav-link" href="#contact">CONTACT</a>
                             </li>
                         </ul>
                     </div>
@@ -63,7 +64,7 @@
 
             <section id="about" class="py-5">
                 <div class="container">
-                    <h3>About Me</h3>
+                    <h3>ABOUT ME</h3>
                     <div class="row" id="about-container">
                         <div id="photo-container">
                             <img src="assets/PortraitPhoto.png" alt="PortraitPhoto"/>
@@ -73,13 +74,7 @@
                                 I'm an Immersive Technologies student with a passion for AR & VR development, game design, visual effects and immersive sound. Currently, I'm a Peer Mentor at Boise State University and a Project Intern at PlusMusic. 
                             </p>
                             <p>
-                                Before embarking on my journey in immersive technologies, I explored my passion for sound as a performing and recording artist in parallel with developing my technical skills as an Advanced Repair Technician at FixIT Mobile and Idaho iRepair. There, I performed advanced device repairs, managed online and physical storefronts, and assisted customers with IT support and hardware repairs.
-                            </p>
-                            <p>
                                 My educational background includes pursuing a Bachelor of Science in Games, Interactive Media, and Mobile Technologies at Boise State University. I'm well-versed in a range of software, from Unity to Adobe Creative Suite and AutoDesk tools, and I'm proficient in coding languages such as C#, Python, C++, Java, HTML, JavaScript, and CSS.
-                            </p>
-                            <p>
-                                I also take pride in achieving the rank of Eagle Scout within the Boy Scouts of America.
                             </p>
                             <p>
                                 I'm excited about the potential of immersive technologies, game development, and the art of creating immersive experiences through visuals, sound, and music. I'm constantly seeking new opportunities to expand my knowledge and contribute to innovative projects in the field.
@@ -91,14 +86,14 @@
 
             <section id="projects" class="py-5">
                 <div class="container">
-                    <h3>Projects</h3>
-                    <p>List your projects here.</p>
+                    <h3>PROJECTS</h3>
+                    <p>Website in progress</p>
                 </div>
             </section>
 
             <section id="contact" class="py-5">
                 <div class="container">
-                    <h3>Contact Me</h3>
+                    <h3>CONTACT</h3>
                     <a href="mailto:chasepfranklin@gmail.com">Email</a>
                     <br />
                     <a href="https://github.com/submeonic">Github</a>
@@ -152,6 +147,27 @@
                 navbarTogglerIcon.classList.remove('fa-eercast', 'nav-icon-expanded');
                 navbarTogglerIcon.classList.add('fa-ravelry', 'nav-icon-collapsed'); // Change back to hamburger icon and apply collapsed style
             });
+        });
+    </script>
+
+    <!-- Sticky Navbar -->
+    <script>
+        var navbar = document.querySelector('.navbar');
+        var stickyPosition = navbar.offsetTop;
+        var isSticky = false;
+
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset >= stickyPosition) {
+                if (!isSticky) {
+                    navbar.classList.add('sticky-navbar');
+                    isSticky = true;
+                }
+            } else {
+                if (isSticky) {
+                    navbar.classList.remove('sticky-navbar');
+                    isSticky = false;
+                }
+            }
         });
     </script>
 </body>

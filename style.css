@@ -23,13 +23,14 @@ h3 {
     color: #292929;
     font-size: 25px;
     background-color: #efefdc85;
-    font-family: "Kode Mono", monospace;
+    font-family: "Overpass", sans-serif;
+    font-weight: 800;
     border-radius: 10px;
     padding: 10px;
 }
 
 p {
-    font-size: 16px;
+    font-size: 13px;
     color: #EFEFDC;
     line-height: 1.5;
     margin-bottom: 20px;
@@ -37,20 +38,31 @@ p {
 }
 
 a{
-    font-family: "Kode Mono", monospace;
-}
-
-.header {
-    background-color: #efefdc85;
-    padding: 20px;
+    font-family: "Overpass", sans-serif;
+    font-weight: 800;
 }
 
 .header-container {
+    position: relative;
     padding: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: #292929;
     border:#333 solid 10px;
-    border-radius: 15px;
+    border-bottom: none;
     text-align: center;
+}
+
+.header-background-image {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px;
+    width: 400px;
+    height: 115%;
+    object-fit: fill;
+    mix-blend-mode: lighten;
+    opacity: 60%;
 }
 
 .page-container {
@@ -58,12 +70,10 @@ a{
 }
 
 .border-image {
-    width: 10%;
-    background-image: url("assets/webBorders.png");
-    background-blend-mode: lighten;
+    width: 20%;
     background-repeat: repeat-y;
-    background-size: 100%;
     border-top: #333 solid 10px;
+    background-color: #333;
 }
 
 @media (max-width: 950px) {
@@ -80,6 +90,12 @@ a{
     border: #333 solid 10px;
 }
 
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures the navbar stays on top of other content */
+}
+
 .navbar-brand {
     color: #EFEFDC;
     font-size: 30px;
@@ -92,6 +108,7 @@ a{
 .navbar-nav .nav-link {
     color: #EFEFDC;
     font-size: 20px;
+    font-weight: 300;
 }
 
 .navbar-nav .nav-link:hover {
