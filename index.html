@@ -103,7 +103,7 @@
                     <div class="projects-view-container">
                         <!-- Repeat this block for each project -->
                         <div class="project-container selected" onclick="showProjectDetails('project1')">
-                            <h4>Submeonic Drift VR</h4>
+                            <h4>Submeonic Drift</h4>
                             <img src="assets/project_thumbnails/placeholder.png" alt="Project 1 Thumbnail" class="project-thumbnail">
                         </div>
                         <div class="project-container" onclick="showProjectDetails('project2')">
@@ -119,8 +119,8 @@
                             <img src="assets/project_thumbnails/instrumentsOfTheDepths.png" alt="Project 4 Thumbnail" class="project-thumbnail">
                         </div>
                         <div class="project-container" onclick="showProjectDetails('project5')">
-                            <h4>Geo-Science Interactive Visualization</h4>
-                            <img src="assets/project_thumbnails/placeholder.png" alt="Project 5 Thumbnail" class="project-thumbnail">
+                            <h4>Geoscience Interactive Visualization</h4>
+                            <img src="assets/project_thumbnails/geoscience.png" alt="Project 5 Thumbnail" class="project-thumbnail">
                         </div>
                         <div class="project-container" onclick="showProjectDetails('project6')">
                             <h4>Project 6 Title</h4>
@@ -133,11 +133,11 @@
                                 <h4 class="project-details-title">Submeonic Drift</h4>
                                 <h5 class="project-details-subtitle">VR Arcade Racer | Present</h5>
                                 <div class="video-container">
-                                    <iframe class="project-details-video" src="https://www.youtube.com/embed/V6wGf1PVG28" title="VR Racing Game Dev Log #1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    <iframe class="project-details-video" src="https://www.youtube.com/embed/V6wGf1PVG28" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                 </div>
                                 <div class="buttons-container">
-                                    <button class="btn">Repository</button>
-                                    <button class="btn">More</button>
+                                    <button class="btn" id="project-repo-button" data-url="">Repository</button>
+                                    <button class="btn" id="project-try-button" data-url="">Try Now</button>
                                 </div>
                             </div>
                             <div class="col-md-6" id="project-details-text">
@@ -148,7 +148,7 @@
                                 <h5>Overview</h5>
                                 <p class="project-details-overview">Submeonic Drift is an arcade racing game designed for VR. Features shaders that curve the world and offer an extremely smoothe and eyecatching experience. Special focus was put on creating intuitive motion controls and tight handling.</p>
                                 <h5>Contributors</h5>
-                                <p class="project-details-contributers">Individual</p>
+                                <p class="project-details-contributors">Individual</p>
                             </div>
                         </div>
                     </div>
@@ -179,6 +179,10 @@
                                 <i class="fa-brands fa-linkedin"></i>
                                 LinkedIn: chase-franklin
                             </a>
+                            <a href="https://www.youtube.com/@submeonic" class="social-link">
+                                <i class="fa-brands fa-youtube"></i>
+                                YouTube: @submeonic
+                            </a>
                         </div>
                         <div class="col-md-6">
                             <a href="https://github.com/submeonic" class="social-link">
@@ -188,6 +192,10 @@
                             <a href="https://submeonic.itch.io/" class="social-link">
                                 <i class="fa-brands fa-itch-io"></i>
                                 Itch.io: submeonic
+                            </a>
+                            <a href="https://discord.com/users/621933672202764298" class="social-link">
+                                <i class="fa-brands fa-discord"></i>
+                                Discord: @submeonic
                             </a>
                             <a href="https://www.instagram.com/submeonic/" class="social-link">
                                 <i class="fa-brands fa-instagram"></i>
@@ -271,6 +279,75 @@
 
     <!--Project Selection Indication-->
     <script>
+        const projectData = {
+            'project1': {
+                title: 'Submeonic Drift',
+                subtitle: 'VR Arcade Racer | Present',
+                videoUrl: 'https://www.youtube.com/embed/V6wGf1PVG28',
+                roles: 'Designer, Programmer, 3D Artist, VFX Artist',
+                stack: 'Unity, Blender, Maya, ShaderGraph, OpenGL, C#',
+                overview: 'Submeonic Drift is an arcade racing game designed for VR. It features shaders that curve the world and offer an extremely smoothe and eyecatching experience. Special focus was put on creating intuitive motion controls and tight handling.',
+                contributors: 'Individual',
+                repositoryUrl: '',
+                tryUrl: ''
+            },
+            'project2': {
+                title: 'Distant Planets Dream of You Too',
+                subtitle: 'Gaze Interaction Comic | Spring 2023',
+                videoUrl: 'https://www.youtube.com/embed/I5_2dyAcwDI',
+                roles: 'Project Leader, Interaction Designer, Programmer, SFX Designer, Composer',
+                stack: 'Unity, OpenCV, Photoshop, Ableton Live, C#, Python',
+                overview: 'An interactive comic that uses gaze interaction to explore ideas in the realm of quantum mechanics. The project was designed as a proof of concept for a comic that adapts and changes based on what the user pays attention to. It features multiple ending combinations and a dynamic soundtrack.',
+                contributors: 'Mackenzie Burt, Casey Heiman, Vale Smith',
+                repositoryUrl: 'https://github.com/submeonic/WebcamGazeInteractionComic',
+                tryUrl: 'https://submeonic.itch.io/distant-planets-dream-of-you-too'
+            },
+            'project3': {
+                title: 'Temporal Tides',
+                subtitle: 'Paradox Naval Combat | Fall 2023',
+                videoUrl: 'https://www.youtube.com/embed/XR885q3O0XQ',
+                roles: 'Gameplay Designer, Programmer, VFX Artist, 3D Modeler',
+                stack: 'Unity, Blender, ShaderGraph, OpenGl, C#',
+                overview: 'Navigate the treacherous waters aboard a ship adjacent to a massive black hole. The main gameplay loop is a ‘Temporal Paradox’, where the player’s actions are simultaneously reflected and opposed by the echoes from an alternate timeline. Earn points by shooting alternate versions of yourself, but be careful to avoid crossfire when your variants mirror your actions. The game also introduces a ‘Predestination Paradox’, challenging the concept of free will versus determinism, as players confront the consequences of their actions in real-time through their mirrored adversaries. This chaotic and hectic gameplay experience serves as a thrilling exploration of paradoxical phenomena, immersing players in a universe where every action has an equal and opposite reaction, questioning the very nature of cause and effect.',
+                contributors: 'Konner Pierce, Heaven Rust, Carson Strout, Jacob Thrall',
+                repositoryUrl: '',
+                tryUrl: 'https://papadaplus.itch.io/temporal-tides'
+            },
+            'project4': {
+                title: 'Instruments of the Depths',
+                subtitle: 'Ability Platformer | Fall 2023',
+                videoUrl: 'https://www.youtube.com/embed/QPgFnWwPFME',
+                roles: 'Gameplay Designer, Programmer, Artist, SFX Designer, Dynamic Audio Designer',
+                stack: 'Unity, Photoshop, Ableton Live, PlusMusic.Ai, C#',
+                overview: '',
+                contributors: 'Individual',
+                repositoryUrl: '',
+                tryUrl: ''
+            },
+            'project5': {
+                title: 'Geo-Science Interactive Visualization',
+                subtitle: 'Visualization of PHD Research | Spring 2024',
+                videoUrl: '',
+                roles: '',
+                stack: '',
+                overview: '',
+                contributors: 'Dr. Megan Cattau, Mae Bridgeman, Kaj Forney, Carson Strout, Mitchell Oliarny, Jayden Quallio',
+                repositoryUrl: '',
+                tryUrl: ''
+            },
+            'project6':{
+                title: 'Project 6 Title',
+                subtitle: '',
+                videoUrl: '',
+                roles: '',
+                stack: '',
+                overview: '',
+                contributors: '',
+                repositoryUrl: '',
+                tryUrl: ''
+            }
+        };
+
         document.addEventListener("DOMContentLoaded", function() {
             const projects = document.querySelectorAll('.project-container');
 
@@ -280,37 +357,55 @@
                     projects.forEach(p => p.classList.remove('selected'));
                     // Add 'selected' class to clicked project
                     this.classList.add('selected');
-                    // Optional: Add logic to display project details
+                    // Get project ID
+                    const projectId = this.getAttribute('data-project-id');
+                    showProjectDetails(projectId);
                 });
             });
+
+            // Event listeners for buttons
+            document.getElementById('project-repo-button').addEventListener('click', function() {
+                const url = this.dataset.url;
+                if (url) window.open(url, '_blank');
+            });
+
+            document.getElementById('project-try-button').addEventListener('click', function() {
+                const url = this.dataset.url;
+                if (url) window.open(url, '_blank');
+            });
         });
-    </script>
 
-    <!--Project Detail Expand Example-->
-    <!-- <script>
         function showProjectDetails(projectId) {
-            var detailsContainer = document.getElementById('project-details');
-            
-            // Example details. You can fetch these from a server or define them here.
-            var projectDetails = {
-                'project1': {
-                    title: 'Project 1',
-                    writeup: 'Description of Project 1...',
-                    videoEmbed: '<iframe src="video_url"></iframe>'
-                }
-                // ... other projects ...
-            };
+        const projectInfo = projectData[projectId];
 
-            var details = projectDetails[projectId];
-            if (details) {
-                detailsContainer.innerHTML = `
-                    <h4>${details.title}</h4>
-                    <p>${details.writeup}</p>
-                    ${details.videoEmbed}
-                `;
+            if (projectInfo) {
+                document.querySelector('.project-details-title').textContent = projectInfo.title;
+                document.querySelector('.project-details-subtitle').textContent = projectInfo.subtitle;
+                document.querySelector('.project-details-video').src = projectInfo.videoUrl;
+                document.querySelector('.project-details-role').textContent = projectInfo.roles;
+                document.querySelector('.project-details-stack').textContent = projectInfo.stack;
+                document.querySelector('.project-details-overview').textContent = projectInfo.overview;
+                document.querySelector('.project-details-contributors').textContent = projectInfo.contributors;
+
+                const repoButton = document.getElementById('project-repo-button');
+                const tryButton = document.getElementById('project-try-button');
+
+                if (projectInfo.repositoryUrl) {
+                    repoButton.dataset.url = projectInfo.repositoryUrl;
+                    repoButton.style.display = 'inline-block';
+                } else {
+                    repoButton.style.display = 'none';
+                }
+
+                if (projectInfo.tryUrl) {
+                    tryButton.dataset.url = projectInfo.tryUrl;
+                    tryButton.style.display = 'inline-block';
+                } else {
+                    tryButton.style.display = 'none';
+                }
             }
         }
-    </script> -->
+    </script>
 </body>
 
 </html>
