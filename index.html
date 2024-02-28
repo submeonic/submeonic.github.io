@@ -103,23 +103,23 @@
                     <div class="projects-view-container">
                         <!-- Repeat this block for each project -->
                         <div class="project-container selected" onclick="showProjectDetails('project1')">
-                            <h4>Project 1 Title</h4>
+                            <h4>Submeonic Drift VR</h4>
                             <img src="assets/project_thumbnails/placeholder.png" alt="Project 1 Thumbnail" class="project-thumbnail">
                         </div>
                         <div class="project-container" onclick="showProjectDetails('project2')">
-                            <h4>Project 2 Title</h4>
-                            <img src="assets/project_thumbnails/placeholder.png" alt="Project 2 Thumbnail" class="project-thumbnail">
+                            <h4>Distant Planets Dream of You Too</h4>
+                            <img src="assets/project_thumbnails/distantPlanets.png" alt="Project 2 Thumbnail" class="project-thumbnail">
                         </div>
                         <div class="project-container" onclick="showProjectDetails('project3')">
-                            <h4>Project 3 Title</h4>
-                            <img src="assets/project_thumbnails/placeholder.png" alt="Project 3 Thumbnail" class="project-thumbnail">
+                            <h4>Temporal Tides</h4>
+                            <img src="assets/project_thumbnails/temporalTides.png" alt="Project 3 Thumbnail" class="project-thumbnail">
                         </div>
                         <div class="project-container" onclick="showProjectDetails('project4')">
-                            <h4>Project 4 Title</h4>
-                            <img src="assets/project_thumbnails/placeholder.png" alt="Project 4 Thumbnail" class="project-thumbnail">
+                            <h4>Instruments of the Depths</h4>
+                            <img src="assets/project_thumbnails/instrumentsOfTheDepths.png" alt="Project 4 Thumbnail" class="project-thumbnail">
                         </div>
                         <div class="project-container" onclick="showProjectDetails('project5')">
-                            <h4>Project 5 Title</h4>
+                            <h4>Geo-Science Interactive Visualization</h4>
                             <img src="assets/project_thumbnails/placeholder.png" alt="Project 5 Thumbnail" class="project-thumbnail">
                         </div>
                         <div class="project-container" onclick="showProjectDetails('project6')">
@@ -128,7 +128,29 @@
                         </div>
                     </div>
                     <div class="project-details-container" id="project-details">
-                        <!-- Project details will be dynamically inserted here -->
+                        <div class="row">
+                            <div class="col-md-6" id="project-details-showcase">
+                                <h4 class="project-details-title">Submeonic Drift</h4>
+                                <h5 class="project-details-subtitle">VR Arcade Racer | Present</h5>
+                                <div class="video-container">
+                                    <iframe class="project-details-video" src="https://www.youtube.com/embed/V6wGf1PVG28" title="VR Racing Game Dev Log #1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                                <div class="buttons-container">
+                                    <button class="btn">Repository</button>
+                                    <button class="btn">More</button>
+                                </div>
+                            </div>
+                            <div class="col-md-6" id="project-details-text">
+                                <h5>Roles</h5>
+                                <p class="project-details-role">Designer, Programmer, 3D Artist, VFX Artist</p>
+                                <h5>Technical Stack</h5>
+                                <p class="project-details-stack">Unity, Blender, Maya, ShaderGraph, OpenGL</p>
+                                <h5>Overview</h5>
+                                <p class="project-details-overview">Submeonic Drift is an arcade racing game designed for VR. Features shaders that curve the world and offer an extremely smoothe and eyecatching experience. Special focus was put on creating intuitive motion controls and tight handling.</p>
+                                <h5>Contributors</h5>
+                                <p class="project-details-contributers">Individual</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -265,7 +287,7 @@
     </script>
 
     <!--Project Detail Expand Example-->
-    <script>
+    <!-- <script>
         function showProjectDetails(projectId) {
             var detailsContainer = document.getElementById('project-details');
             
@@ -288,7 +310,7 @@
                 `;
             }
         }
-    </script>
+    </script> -->
 </body>
 
 </html>
