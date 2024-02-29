@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background-color: #292929;
 }
@@ -37,12 +42,27 @@ h5{
     font-style: normal;
 }
 
+h6{
+    font-size: 20px;
+    color: #EFEFDC;
+    font-family: "Overpass", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+}
+
 p {
     font-size: 13px;
     color: #EFEFDC;
     line-height: 1.5;
     margin-bottom: 20px;
     font-family: "Kode Mono", monospace;
+}
+
+hr{
+    border: 1px solid #EFEFDC;
+    margin: 20px 0;
+
 }
 
 a{
@@ -217,7 +237,7 @@ a{
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     #about-container {
         display: flex;
         flex-direction: column;
@@ -251,7 +271,7 @@ a{
     overflow: hidden; /* For border-radius to affect child elements */
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .project-container {
         width: 250px; /* Adjust as needed */
     }
@@ -360,6 +380,63 @@ a{
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.double-poster-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+}
+
+.double-poster-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.photo-gallery-container{
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.photo-gallery{
+    display: flex;
+    gap: 10px;
+}
+
+.gallery-column{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 32%;
+}
+
+.middle-gallery-column{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 35%;
+}
+
+.gallery-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .photo-gallery{
+        flex-direction: column;
+    }
+    .gallery-column{
+        max-width: 100%;
+    }
+    .middle-gallery-column{
+        max-width: 100%;
+    }
 }
 
 .social-link {
