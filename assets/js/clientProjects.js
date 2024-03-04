@@ -1,6 +1,6 @@
 const clientProjectData = {
     'project1': {
-        title: 'Instruments of the Depths',
+        title: 'Sounds of the Depths',
         subtitle: 'Ability Platformer | Fall 2023',
         videoUrl: 'https://www.youtube.com/embed/QPgFnWwPFME',
         roles: 'Gameplay Designer, Programmer, Artist, SFX Designer, Dynamic Audio Designer',
@@ -34,11 +34,11 @@ const clientProjectData = {
     },
     'project4': {
         title: 'ABC Stories',
-        subtitle: '',
+        subtitle: 'Educational AR App | Spring 2024',
         videoUrl: 'https://www.youtube.com/embed/f6TUAltSobQ',
-        roles: '',
-        stack: '',
-        overview: '',
+        roles: 'UI Designer, Programmer',
+        stack: 'Swift, UIKit, ARKit, Xcode, Photoshop, Figma',
+        overview: 'ABC Stories is an AR application for iOS designed to help kids learn handwritting in a fun and engaging format. I was part of the 2024 update team, working on localizing data storage and data management, refreshing the UI, and AR features.',
         contributors: 'Kaj Forney, Carson Strout, Mitchell Oliarny, Jayden Quallio',
         repositoryUrl: '',
         tryUrl: ''
