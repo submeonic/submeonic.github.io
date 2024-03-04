@@ -5,19 +5,19 @@ const clientProjectData = {
         videoUrl: 'https://www.youtube.com/embed/QPgFnWwPFME',
         roles: 'Gameplay Designer, Programmer, Artist, SFX Designer, Dynamic Audio Designer',
         stack: 'Unity, Photoshop, Ableton Live, PlusMusic.Ai, C#',
-        overview: '',
+        overview: "Created as a playable demonstration of PlusMusic's Unity plugin. Intended to showcase adaptive sound tracking. Also designed functional UI display for PlusMusic plugin status and control. Corresponded with PlusMusic Head of Marketing to nail down design requirements.",
         contributors: 'Individual',
         repositoryUrl: '',
         tryUrl: ''
     },
     'project2': {
         title: 'Plus Music Graphic Video',
-        subtitle: '',
-        videoUrl: '',
-        roles: '',
-        stack: '',
-        overview: '',
-        contributors: '',
+        subtitle: 'Animated Graphics | Summer 2023',
+        videoUrl: 'https://www.youtube.com/embed/4CqYB9phfDY',
+        roles: 'Animator, Graphic Designer',
+        stack: 'After Effects, Photoshop',
+        overview: "Animated a graphic video demonstrating PlusMusic's use of AI in their platform. Corresponded with PlusMusic CEO to nail down design requirements over multiple itterations.",
+        contributors: 'Individual',
         repositoryUrl: '',
         tryUrl: ''
     },
@@ -25,8 +25,8 @@ const clientProjectData = {
         title: 'Geo-Science Interactive Visualization',
         subtitle: 'Visualization of PHD Research | Spring 2024',
         videoUrl: '',
-        roles: '',
-        stack: '',
+        roles: 'Terrain Artist, 3D Modeler, Programmer, UI Designer',
+        stack: 'Unity, Agisoft Metashape, Blender, Photoshop, C#',
         overview: '',
         contributors: 'Dr. Megan Cattau, Kaj Forney, Carson Strout, Mitchell Oliarny, Jayden Quallio',
         repositoryUrl: '',
@@ -35,11 +35,11 @@ const clientProjectData = {
     'project4': {
         title: 'ABC Stories',
         subtitle: '',
-        videoUrl: '',
+        videoUrl: 'https://www.youtube.com/embed/f6TUAltSobQ',
         roles: '',
         stack: '',
         overview: '',
-        contributors: '',
+        contributors: 'Kaj Forney, Carson Strout, Mitchell Oliarny, Jayden Quallio',
         repositoryUrl: '',
         tryUrl: ''
     }
@@ -58,17 +58,6 @@ document.addEventListener("DOMContentLoaded", function () {
             const projectId = this.getAttribute('data-project-id');
             showProjectDetails(projectId);
         });
-    });
-
-    // Event listeners for buttons
-    document.getElementById('project-repo-button').addEventListener('click', function () {
-        const url = this.dataset.url;
-        if (url) window.open(url, '_blank');
-    });
-
-    document.getElementById('project-try-button').addEventListener('click', function () {
-        const url = this.dataset.url;
-        if (url) window.open(url, '_blank');
     });
 });
 

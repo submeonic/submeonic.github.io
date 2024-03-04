@@ -272,7 +272,7 @@ a{
 }
 
 @media (max-width: 768px) {
-    .project-container {
+    .project-container, .client-project-container{
         width: 250px; /* Adjust as needed */
     }
 }
