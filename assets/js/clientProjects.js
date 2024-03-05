@@ -27,7 +27,7 @@ const clientProjectData = {
         videoUrl: '',
         roles: 'Terrain Artist, 3D Modeler, Programmer, UI Designer',
         stack: 'Unity, Agisoft Metashape, Blender, Photoshop, C#',
-        overview: '',
+        overview: "This application has been developed for an exhibit at the 2024 Personal Structures Exhibition in Venice, Italy. It displays geological drone data gathered by Boise State University's Human-Environment Systems department in an interactive manner. Exhibitors are able to immerse themselves in the environment while learning about invasive plant species in Idaho.",
         contributors: 'Dr. Megan Cattau, Kaj Forney, Carson Strout, Mitchell Oliarny, Jayden Quallio',
         repositoryUrl: '',
         tryUrl: ''
