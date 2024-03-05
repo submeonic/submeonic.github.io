@@ -397,8 +397,11 @@ a{
 
 .photo-gallery-container{
     width: 100%;
+    height: 600px;
+    overflow: hidden;
     margin: auto;
     padding-top: 20px;
+    border-bottom: #B8B8A4 solid 2px;
 }
 
 .photo-gallery{

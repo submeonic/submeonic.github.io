@@ -236,7 +236,7 @@
                     <br/>
                     <h6>GALLERY</h6>
                     <hr/>
-                    <div class="photo-gallery-container">
+                    <div class="photo-gallery-container" id="photo-gallery-container">
                         <div class="photo-gallery">
                             <div class="gallery-column">
                                 <div class="gallery-image">
@@ -281,6 +281,9 @@
                             </div>
                         </div>
                     </div>
+                
+                <div class="buttons-container">
+                    <button class="btn" id="more-gallery-button">View More</button>
                 </div>
             </section>
 
@@ -377,9 +380,29 @@
             }
         });
     </script>
+
+    <!-- Load Initial Content View -->
     <script>
         showFeaturedProjectDetails('project1');
         showClientProjectDetails('project1');
+    </script>
+
+    <!-- Photo Gallery View More Button -->
+    <script>
+        document.getElementById('more-gallery-button').addEventListener('click', function () {
+            var gallery = document.getElementById('photo-gallery-container');
+            var button = document.getElementById('more-gallery-button');
+
+            if(button.textContent === 'View More') {
+                button.textContent = 'View Less';
+                gallery.style.overflow = 'visible'; // Allow all content to be shown
+                gallery.style.height = 'auto'; // Remove the fixed height constraint
+            } else {
+                button.textContent = 'View More';
+                gallery.style.overflow = 'hidden'; // Hide overflow content
+                gallery.style.height = '600px'; // Reset to initial fixed height
+            }
+        });
     </script>
 </body>
 
