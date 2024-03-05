@@ -38,7 +38,7 @@ const clientProjectData = {
         videoUrl: 'https://www.youtube.com/embed/f6TUAltSobQ',
         roles: 'UI Designer, Programmer',
         stack: 'Swift, UIKit, ARKit, Xcode, Photoshop, Figma',
-        overview: 'ABC Stories is an AR application for iOS designed to help kids learn handwritting in a fun and engaging format. I was part of the 2024 update team, working on localizing data storage and data management, refreshing the UI, and AR features.',
+        overview: 'ABC Stories is an AR application for iOS designed to help kids learn the alphabet in a fun and engaging format. I was part of the 2024 update team, working on localizing data storage and data management, refreshing the UI, and AR features.',
         contributors: 'Kaj Forney, Carson Strout, Mitchell Oliarny, Jayden Quallio',
         repositoryUrl: '',
         tryUrl: ''
