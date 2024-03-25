@@ -36,7 +36,7 @@ const featuredProjectData = {
     'project4': {
         title: 'Dead West',
         subtitle: 'Interactive Animation | Spring 2023',
-        videoUrl: 'https://rr2---sn-nx57ynsk.c.drive.google.com/videoplayback?expire=1709605256&ei=WFfmZYTkIPmrp84PldOM8Ak&ip=72.24.122.99&id=a885ef975aea50b3&itag=18&source=webdrive&requiressl=yes&xpc=EghonaK1InoBAQ==&mh=tX&mm=32,26&mn=sn-nx57ynsk,sn-2imeyn7k&ms=su,onr&mv=m&mvi=2&pl=24&ttl=transient&susc=dr&driveid=12Q7eucmwFIlQ50oOr9kwIXYnB8xTB5Z0&app=explorer&eaua=lK_F3NbrKu4&mime=video/mp4&vprv=1&prv=1&dur=45.464&lmt=1683173505835217&mt=1709593973&fvip=1&subapp=DRIVE_WEB_FILE_VIEWER&txp=0011224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,ttl,susc,driveid,app,eaua,mime,vprv,prv,dur,lmt&sig=AJfQdSswRAIgVLQ13RK2u2bNqcjNPwNo4Bmzg5nYywkuiWuu7-kZTa0CIBrL8A5iFEi5HyUL8CDRUaglZ9nALPW3aOIfH86pdC7d&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=APTiJQcwRQIhAN-vsFegVn3vmeURac9UKpB_yQ58-ADYnZ7i56UEk-oYAiAw1Yy51Hlt5KbIuOBzxdQepv0zPixFVE2Fs2UYNEzfng==&cpn=NC7dFdaqlMIbLiFG&c=WEB_EMBEDDED_PLAYER&cver=1.20240227.01.00',
+        videoUrl: 'https://www.youtube.com/embed/10OWIMlVvq0',
         roles: 'Illustrator, Animator, Gaze Tracking Programmer, Composer, Sound Designer',
         stack: 'Animate, Photoshop, Unity, Ableton Live, C#, OpenCV, Python',
         overview: 'Dead West is a short animation with a focus on building atmosphere and visual storytelling. The project also features a computer vision gazed control system that I developed, to allow the user to control their viewing angle with their head',
