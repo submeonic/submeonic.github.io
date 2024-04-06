@@ -3,7 +3,7 @@ const featuredProjectData = {
     'project1': {
         title: 'Submeonic Drift',
         subtitle: 'VR Arcade Racer | Present',
-        videoUrl: 'https://www.youtube.com/embed/V6wGf1PVG28',
+        videoUrl: 'https://www.youtube.com/embed/LMbI63rmvac',
         roles: 'Designer, Programmer, 3D Artist, VFX Artist',
         stack: 'Unity, Blender, Maya, ShaderGraph, OpenGL, C#',
         overview: 'Submeonic Drift is an arcade racing game designed for VR. It features shaders that curve the world and offer an extremely smoothe and eyecatching experience. Special focus was put on creating intuitive motion controls and tight handling. Planned features include multi-player support, procedurally generated tracks, and opponent drivers',
