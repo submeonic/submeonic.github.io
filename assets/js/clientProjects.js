@@ -2,7 +2,7 @@ const clientProjectData = {
     'project1': {
         title: 'Sounds of the Depths',
         subtitle: 'Ability Platformer | Fall 2023',
-        videoUrl: 'https://www.youtube.com/embed/QPgFnWwPFME',
+        videoUrl: 'https://www.youtube-nocookie.com/embed/QPgFnWwPFME?modestbranding=1&rel=0&iv_load_policy=3&controls=1',
         roles: 'Gameplay Designer, Programmer, Artist, SFX Designer, Dynamic Audio Designer',
         stack: 'Unity, Photoshop, Ableton Live, PlusMusic.Ai, C#',
         overview: "Created as a playable demonstration of PlusMusic's Unity plugin. Intended to showcase adaptive sound tracking. Also designed functional UI display for PlusMusic plugin status and control. Corresponded with PlusMusic Head of Marketing to nail down design requirements.",
@@ -13,7 +13,7 @@ const clientProjectData = {
     'project2': {
         title: 'Plus Music Graphic Video',
         subtitle: 'Animated Graphics | Summer 2023',
-        videoUrl: 'https://www.youtube.com/embed/4CqYB9phfDY',
+        videoUrl: 'https://www.youtube-nocookie.com/embed/4CqYB9phfDY?modestbranding=1&rel=0&iv_load_policy=3&controls=1',
         roles: 'Animator, Graphic Designer',
         stack: 'After Effects, Photoshop',
         overview: "Animated a graphic video demonstrating PlusMusic's use of AI in their platform. Corresponded with PlusMusic CEO to nail down design requirements over multiple itterations.",
@@ -35,7 +35,7 @@ const clientProjectData = {
     'project4': {
         title: 'ABC Stories',
         subtitle: 'Educational AR App | Spring 2024',
-        videoUrl: 'https://www.youtube.com/embed/f6TUAltSobQ',
+        videoUrl: 'https://www.youtube-nocookie.com/embed/f6TUAltSobQ?modestbranding=1&rel=0&iv_load_policy=3&controls=1',
         roles: 'UI Designer, Programmer',
         stack: 'Swift, UIKit, ARKit, Xcode, Photoshop, Figma',
         overview: 'ABC Stories is an AR application for iOS designed to help kids learn the alphabet in a fun and engaging format. I was part of the 2024 update team, working on localizing data storage and data management, refreshing the UI, and AR features.',
@@ -56,9 +56,20 @@ document.addEventListener("DOMContentLoaded", function () {
             this.classList.add('selected');
             // Get project ID
             const projectId = this.getAttribute('data-project-id');
-            showProjectDetails(projectId);
+            showClientProjectDetails(projectId);
         });
     });
+
+        // Event listeners for buttons
+        document.getElementById('client-project-repo-button').addEventListener('click', function () {
+            const url = this.dataset.url;
+            if (url) window.open(url, '_blank');
+        });
+    
+        document.getElementById('client-project-try-button').addEventListener('click', function () {
+            const url = this.dataset.url;
+            if (url) window.open(url, '_blank');
+        });
 });
 
 function showClientProjectDetails(projectId) {
