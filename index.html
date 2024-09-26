@@ -128,7 +128,7 @@
                         <!-- Repeat this block for each project -->
                         <div class="project-container selected" onclick="showFeaturedProjectDetails('project1')">
                             <h4>Submeonic Drift</h4>
-                            <img src="assets/project_thumbnails/submeonicDrift.jpg" alt="Project 1 Thumbnail"
+                            <img src="assets/project_thumbnails/submeonicDrift.png" alt="Project 1 Thumbnail"
                                 class="project-thumbnail" loading="lazy">
                         </div>
                         <div class="project-container" onclick="showFeaturedProjectDetails('project2')">
@@ -246,32 +246,48 @@
                     </div>
                     <h6>3D</h6>
                     <hr/>
-                    <div class="threeD-gallery-container" id="threeD-gallery-container">
+                    <div class="photo-gallery-container" id="3d-gallery-container">
                         <div class="photo-gallery">
                             <div class="gallery-column">
                                 <div class="gallery-image">
-                                    <a target="_blank" href="assets/3D/Armour.JPG">
-                                        <img src="assets/3D/Armour.JPG" alt="Armour" loading="lazy">
+                                    <a target="_blank" href="assets/3D/Armour.png">
+                                        <img src="assets/3D/Armour.png" alt="Armour" loading="lazy">
+                                    </a>
+                                </div>
+                                <div class="gallery-image">
+                                    <a target="_blank" href="assets/3D/Vroom.gif">
+                                        <img src="assets/3D/Vroom.gif" alt="Vroom" loading="lazy">
                                     </a>
                                 </div>
                             </div>
                             <div class="middle-gallery-column">
                                 <div class="gallery-image">
-                                    <a target="_blank" href="assets/animation/ShadersUpgrade.gif">
-                                        <img src="assets/animation/ShadersUpgrade.gif" alt="Armour" loading="lazy">
+                                    <a target="_blank" href="assets/3D/Wire-Senosh.png">
+                                        <img src="assets/3D/Wire-Senosh.png" alt="SenoshWireframe" loading="lazy">
+                                    </a>
+                                </div>
+                                <div class="gallery-image">
+                                    <a target="_blank" href="assets/3D/WireSteering.gif">
+                                        <img src="assets/3D/WireSteering.gif" alt="WireSteering" loading="lazy">
                                     </a>
                                 </div>
                             </div>
                             <div class="gallery-column">
                                 <div class="gallery-image">
-                                    <div class="gallery-image">
-                                        <a target="_blank" href="assets/3D/SenosheeBlender.jpg">
-                                            <img src="assets/3D/SenosheeBlender.jpg" alt="Armour" loading="lazy">
-                                        </a>
-                                    </div>
+                                    <a target="_blank" href="assets/3D/StylizedSmoke.gif">
+                                        <img src="assets/3D/StylizedSmoke.gif" alt="StylizedSmoke" loading="lazy">
+                                    </a>
+                                </div>
+                                <div class="gallery-image">
+                                    <a target="_blank" href="assets/3D/TVHead.gif">
+                                        <img src="assets/3D/TVHead.gif" alt="TVHead" loading="lazy">
+                                    </a>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="buttons-container">
+                        <button class="btn" id="more-3d-button">View More</button>
                     </div>
                     <br/>
                     <br/>
@@ -325,9 +341,9 @@
                             </div>
                         </div>
                     </div>
-                
-                <div class="buttons-container">
-                    <button class="btn" id="more-gallery-button">View More</button>
+                    <div class="buttons-container">
+                        <button class="btn" id="more-gallery-button">View More</button>
+                    </div>
                 </div>
             </section>
 
@@ -425,10 +441,22 @@
         });
     </script>
 
-    <!-- Load Initial Content View -->
+    <!-- 3D Gallery View More Button -->
     <script>
-        showFeaturedProjectDetails('project1');
-        showClientProjectDetails('project1');
+        document.getElementById('more-3d-button').addEventListener('click', function () {
+            var gallery = document.getElementById('3d-gallery-container');
+            var button = document.getElementById('more-3d-button');
+
+            if(button.textContent === 'View More') {
+                button.textContent = 'View Less';
+                gallery.style.overflow = 'visible'; // Allow all content to be shown
+                gallery.style.height = 'auto'; // Remove the fixed height constraint
+            } else {
+                button.textContent = 'View More';
+                gallery.style.overflow = 'hidden'; // Hide overflow content
+                gallery.style.height = '600px'; // Reset to initial fixed height
+            }
+        });
     </script>
 
     <!-- Photo Gallery View More Button -->
@@ -447,6 +475,12 @@
                 gallery.style.height = '600px'; // Reset to initial fixed height
             }
         });
+    </script>
+
+    <!-- Load Initial Content View -->
+    <script>
+        showFeaturedProjectDetails('project1');
+        showClientProjectDetails('project1');
     </script>
 </body>
 

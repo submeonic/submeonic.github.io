@@ -396,7 +396,7 @@ a{
     border-radius: 15px;
 }
 
-.photo-gallery-container, .threeD-gallery-container{
+.photo-gallery-container{
     width: 100%;
     height: 600px;
     overflow: hidden;
