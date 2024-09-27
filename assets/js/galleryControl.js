@@ -11,7 +11,7 @@ const gallery3DSchema = [
 // Image schema for Photo Gallery
 const galleryPhotoSchema = [
     { src: 'assets/art/StylizedPortrait_LOW.jpg', href: 'assets/art/StylizedPortrait.png', alt: 'StylizedPortrait' },
-    { src: 'assets/animation/GunspinPoster_LOW.gif', href: 'assets/animation/GunspinPoster.gif', alt: 'GunspinPoster' },
+    { src: 'assets/animation/GunSpinPoster_LOW.gif', href: 'assets/animation/GunSpinPoster.gif', alt: 'GunSpinPoster' },
     { src: 'assets/art/Reimagine_LOW.jpg', href: 'assets/art/Reimagine.png', alt: 'Reimagine' },
     { src: 'assets/animation/DoUSeeIt_LOW.gif', href: 'assets/animation/DoUSeeIt.gif', alt: 'DoUSeeIt' },
     { src: 'assets/art/HondaExpress_LOW.jpg', href: 'assets/art/HondaExpress.png', alt: 'HondaExpress' },
