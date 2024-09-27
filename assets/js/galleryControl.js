@@ -67,7 +67,7 @@ function renderMobileGallery(galleryId, schema) {
     schema.forEach(image => {
         const imgDiv = document.createElement('div');
         imgDiv.classList.add('gallery-image');
-        imgDiv.innerHTML = `<a target="_blank" href="${image.src}"><img src="${image.src}" alt="${image.alt}" loading="lazy"></a>`;
+        imgDiv.innerHTML = `<a target="_blank" href="${image.href}"><img src="${image.src}" alt="${image.alt}" loading="lazy"></a>`;
         singleColumn.appendChild(imgDiv);
     });
 
