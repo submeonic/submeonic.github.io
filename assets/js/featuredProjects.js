@@ -2,7 +2,7 @@
 const featuredProjectData = {
     'project1': {
         title: 'Submeonic Drift',
-        subtitle: 'VR Arcade Racer | Present',
+        subtitle: 'VR Arcade Racer | Spring 2024',
         videoUrl: 'https://www.youtube-nocookie.com/embed/hFNnDMGZ7sI?modestbranding=1&rel=0&iv_load_policy=3&controls=1',
         roles: 'Designer, Programmer, 3D Artist, VFX Artist, Composer',
         stack: 'Unity, Blender, Maya, ShaderGraph, OpenGL, C#, Ableton Live',

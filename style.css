@@ -260,7 +260,7 @@ a{
     padding-bottom: 20px;
 }
 
-.project-container, .client-project-container {
+.project-container, .client-project-container, .research-project-container{
     flex: none;
     width: 400px; /* Adjust as needed */
     margin: 10px;
@@ -272,12 +272,12 @@ a{
 }
 
 @media (max-width: 768px) {
-    .project-container, .client-project-container{
+    .project-container, .client-project-container, .research-project-container{
         width: 250px; /* Adjust as needed */
     }
 }
 
-.project-container h4, .client-project-container h4 { /* Assuming h4 for project titles */
+.project-container h4, .client-project-container h4, .research-project-container h4 { /* Assuming h4 for project titles */
     font-size: 20px; /* Adjust as needed */
     margin: 10px 0;
     padding: 0 10px;
@@ -300,7 +300,7 @@ a{
     font-family: "Kode Mono", monospace; /* Matches paragraph style */
 }
 
-.project-container.selected, .client-project-container.selected{
+.project-container.selected, .client-project-container.selected, .research-project-container.selected{
     border: 2px solid #EFEFDC; /* Highlight with a border */
     background-color: rgba(239, 239, 220, 0.1); /* Slightly change background */
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5); /* Enhanced shadow */
@@ -350,7 +350,7 @@ a{
     
 }
 
-.project-details-title, .client-project-details-title{
+.project-details-title, .client-project-details-title, .research-project-details-title{
     font-size: 20px; /* Adjust as needed */
     margin: 10px 0;
     padding: 0 10px;
@@ -358,7 +358,7 @@ a{
     font-weight: 800;
 }
 
-.project-details-subtitle, .client-project-details-subtitle{
+.project-details-subtitle, .client-project-details-subtitle, .research-project-details-subtitle{
     font-size: 15px; /* Adjust as needed */
     margin: 10px 0;
     padding: 0 10px;
@@ -373,7 +373,7 @@ a{
     margin-bottom: 20px;
 }
 
-.project-details-video, .client-project-details-video {
+.project-details-video, .client-project-details-video, .research-project-details-video {
     width: 100%;
     position: absolute;
     top: 0;
@@ -427,7 +427,7 @@ a{
 .gallery-image img{
     width: 100%;
     height: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
     object-fit: cover;
 }
 
