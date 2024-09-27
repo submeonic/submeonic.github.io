@@ -43,11 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
             const url = this.dataset.url;
             if (url) window.open(url, '_blank');
         });
-    
-        document.getElementById('research-project-try-button').addEventListener('click', function () {
-            const url = this.dataset.url;
-            if (url) window.open(url, '_blank');
-        });
 });
 
 function showResearchProjectDetails(projectId) {
