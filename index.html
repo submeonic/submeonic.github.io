@@ -399,7 +399,7 @@
     <script>
         const navbar = document.querySelector('.navbar');
         const stickyPosition = navbar.offsetTop;
-        const isSticky = false;
+        let isSticky = false;
 
         window.addEventListener('scroll', function () {
             if (window.pageYOffset >= stickyPosition) {
