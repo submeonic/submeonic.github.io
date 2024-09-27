@@ -67,7 +67,7 @@ function renderMobileGallery(galleryId, schema) {
     schema.forEach(image => {
         const imgDiv = document.createElement('div');
         imgDiv.classList.add('gallery-image');
-        imgDiv.innerHTML = `<a target="_blank"><img src="${image.src}" href="${image.href}" alt="${image.alt}" loading="lazy"></a>`;
+        imgDiv.innerHTML = `<a target="_blank" href="${image.href}"><img src="${image.src}" alt="${image.alt}" loading="lazy"></a>`;
         singleColumn.appendChild(imgDiv);
     });
 
@@ -93,7 +93,7 @@ function renderDesktopGallery(galleryId, schema) {
     schema.forEach((image, index) => {
         const imgDiv = document.createElement('div');
         imgDiv.classList.add('gallery-image');
-        imgDiv.innerHTML = `<a target="_blank"><img src="${image.src}" href="${image.href}" alt="${image.alt}" loading="lazy"></a>`;
+        imgDiv.innerHTML = `<a target="_blank" href="${image.href}"><img src="${image.src}" alt="${image.alt}" loading="lazy"></a>`;
 
         // Distribute images into 3 columns
         if (index % 3 === 0) {
