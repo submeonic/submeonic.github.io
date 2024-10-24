@@ -18,11 +18,6 @@ const galleryPhotoSchema = [
     { src: 'assets/art/Deora3_LOW.jpg', href: 'assets/art/Deora3.png', alt: 'Deora3' }
 ];
 
-// Caching rendered content for optimization
-let cachedMobileGallery = { '3d-gallery-container': null, 'photo-gallery-container': null };
-let cachedDesktopGallery = { '3d-gallery-container': null, 'photo-gallery-container': null };
-let currentLayout = null; // Keeps track of the current layout state
-
 // Set up event listeners
 document.addEventListener("DOMContentLoaded", function () {
     // Event Listeners for "View More" buttons
@@ -34,13 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
         toggleGalleryView('photo-gallery-container', 'more-gallery-button', '600px');
     });
 
-    // Run on load and on resize with debounce
+    // Run on load
     checkScreenSize();
-    let resizeTimeout;
-    window.addEventListener('resize', function () {
-        clearTimeout(resizeTimeout);
-        resizeTimeout = setTimeout(checkScreenSize, 200); // Debounce delay
-    });
 });
 
 // View More Button for 3D and Photo Galleries
@@ -62,22 +52,17 @@ function toggleGalleryView(galleryId, buttonId, initialHeight) {
 // General render function for mobile layout (1 column)
 function renderMobileGallery(galleryId, schema) {
     const galleryContainer = document.getElementById(galleryId);
+    galleryContainer.innerHTML = ''; // Clear current gallery
 
-    // Use cached content if available
-    if (cachedMobileGallery[galleryId]) {
-        galleryContainer.innerHTML = cachedMobileGallery[galleryId];
-        return;
-    }
-
-    // Otherwise, render and cache it
-    galleryContainer.innerHTML = '';
     const gallery = document.createElement('div');
     gallery.classList.add('photo-gallery');
 
+    // Create a single column
     const singleColumn = document.createElement('div');
     singleColumn.classList.add('gallery-column');
     singleColumn.style.maxWidth = '100%';
 
+    // Append all images in order
     schema.forEach(image => {
         const imgDiv = document.createElement('div');
         imgDiv.classList.add('gallery-image');
@@ -87,68 +72,50 @@ function renderMobileGallery(galleryId, schema) {
 
     gallery.appendChild(singleColumn);
     galleryContainer.appendChild(gallery);
-
-    // Cache the rendered mobile gallery
-    cachedMobileGallery[galleryId] = galleryContainer.innerHTML;
 }
 
 // General render function for desktop layout (3 columns)
 function renderDesktopGallery(galleryId, schema) {
     const galleryContainer = document.getElementById(galleryId);
+    galleryContainer.innerHTML = ''; // Clear current gallery
 
-    // Use cached content if available
-    if (cachedDesktopGallery[galleryId]) {
-        galleryContainer.innerHTML = cachedDesktopGallery[galleryId];
-        return;
-    }
-
-    // Otherwise, render and cache it
-    galleryContainer.innerHTML = '';
     const gallery = document.createElement('div');
     gallery.classList.add('photo-gallery');
 
+    // Create 3 columns
     const columns = [document.createElement('div'), document.createElement('div'), document.createElement('div')];
     columns[0].classList.add('gallery-column');
     columns[1].classList.add('middle-gallery-column');
     columns[2].classList.add('gallery-column');
 
+    // Append images into columns based on index (1st and 4th in first column, 2nd and 5th in second, etc.)
     schema.forEach((image, index) => {
         const imgDiv = document.createElement('div');
         imgDiv.classList.add('gallery-image');
         imgDiv.innerHTML = `<a target="_blank" href="${image.href}"><img src="${image.src}" alt="${image.alt}" loading="lazy"></a>`;
 
+        // Distribute images into 3 columns
         if (index % 3 === 0) {
-            columns[0].appendChild(imgDiv);
+            columns[0].appendChild(imgDiv); // First column: img1, img4
         } else if (index % 3 === 1) {
-            columns[1].appendChild(imgDiv);
+            columns[1].appendChild(imgDiv); // Second column: img2, img5
         } else {
-            columns[2].appendChild(imgDiv);
+            columns[2].appendChild(imgDiv); // Third column: img3, img6
         }
     });
 
+    // Append columns to the gallery
     columns.forEach(column => gallery.appendChild(column));
     galleryContainer.appendChild(gallery);
-
-    // Cache the rendered desktop gallery
-    cachedDesktopGallery[galleryId] = galleryContainer.innerHTML;
 }
 
 // Function to check screen size and switch layouts
 function checkScreenSize() {
-    const isMobile = window.innerWidth <= 768;
-
-    // Prevent unnecessary re-renders
-    if (isMobile && currentLayout === 'mobile') return;
-    if (!isMobile && currentLayout === 'desktop') return;
-
-    // Update currentLayout state
-    currentLayout = isMobile ? 'mobile' : 'desktop';
-
-    if (isMobile) {
-        renderMobileGallery('3d-gallery-container', gallery3DSchema);
-        renderMobileGallery('photo-gallery-container', galleryPhotoSchema);
+    if (window.innerWidth <= 768) {
+        renderMobileGallery('3d-gallery-container', gallery3DSchema);  // Mobile layout for 3D gallery
+        renderMobileGallery('photo-gallery-container', galleryPhotoSchema);  // Mobile layout for Photo gallery
     } else {
-        renderDesktopGallery('3d-gallery-container', gallery3DSchema);
-        renderDesktopGallery('photo-gallery-container', galleryPhotoSchema);
+        renderDesktopGallery('3d-gallery-container', gallery3DSchema); // Desktop layout for 3D gallery
+        renderDesktopGallery('photo-gallery-container', galleryPhotoSchema); // Desktop layout for Photo gallery
     }
 }
