@@ -440,9 +440,11 @@ a{
     }
     .gallery-column{
         max-width: 100%;
+        width: 100%;
     }
     .middle-gallery-column{
         max-width: 100%;
+        width: 100%;
     }
 }
 
