@@ -5,6 +5,8 @@
 
 body {
     background-color: #292929;
+    scroll-behavior: smooth;
+    overscroll-behavior: none;
 }
 
 h1 {
@@ -152,7 +154,7 @@ a{
 
 .navbar-brand {
     color: #EFEFDC;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .navbar-brand:hover {

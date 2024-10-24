@@ -12,8 +12,6 @@
     
     <!-- Project View Scripts -->
     <script src="assets/js/featuredProjects.js"></script>
-    <script src="assets/js/clientProjects.js"></script>
-    <script src="assets/js/researchProjects.js"></script>
     <script src="assets/js/galleryControl.js"></script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -42,7 +40,7 @@
         <div class="header-container">
             <img src="assets/HeaderBackground.png" alt="Background" class="header-background-image">
             <h1>CHASE FRANKLIN</h1>
-            <h2>IMMERSIVE DEVELOPER</h2>
+            <h2>INTERACTIVE DESIGNER</h2>
         </div>
     </div>
     <div class="page-container">
@@ -83,21 +81,18 @@
                         </div>
                         <div id="bio-container">
                             <p>
-                                Hello! I am an immersive developer and technical creative, passionate about R&D in 
-                                immersive technologies and hoping to pursue graduate studies pertaining to interactive media technologies. 
-                                My focus is on exploring technical solutions in experience design and spatial interactives, 
-                                with a strong interest in graphics, spatial development, and real-time AI programming. 
-                                I consider myself a tinkerer, always experimenting with technology to invent new ways of 
-                                interacting and experiencing. When I’m not immersed in technology, I’m unwinding by playing 
-                                instruments and crafting soundtracks.
+                                Hello! I am an immersive developer and technical creative, passionate about interactive
+                                design and R&D in immersive technologies. My focus is on exploring technical solutions in 
+                                experience design and spatial interactives, with a strong interest in graphics, spatial 
+                                development, and real-time AI programming. I consider myself a tinkerer, always experimenting 
+                                with technology to invent new ways of interacting and experiencing. When I’m not immersed in 
+                                technology, I’m unwinding by playing instruments and crafting soundtracks.
                             </p>
                             <p>
                                 My education in Games, Interactive Media, and Mobile Technologies (GIMM) at Boise State 
                                 University has trained me to adapt quickly to new pipelines and mediums, laying a foundation 
                                 in high-level design, project scoping, and team management. This experience has shaped my 
-                                approach to problem-solving and design thinking. Professionally, I have sharpened my 
-                                programming and tool usage through research development and creative exploration. I am always 
-                                seeking opportunities to collaborate on innovative projects.
+                                approach to problem-solving and design thinking.
                             </p>
                             <p>
                                 Professionally, I’ve delved into research development and high-level design where I’ve
@@ -125,19 +120,34 @@
                             <img src="assets/project_thumbnails/submeonicDrift.png" alt="Project 1 Thumbnail"
                                 class="project-thumbnail" loading="lazy">
                         </div>
+                        <div class="project-container" onclick="showFeaturedProjectDetails('project3')">
+                            <h4>Sounds of the Depths</h4>
+                            <img src="assets/project_thumbnails/instrumentsOfTheDepths.png" alt="Project 3 Thumbnail"
+                                class="project-thumbnail" loading="lazy">
+                        </div>
                         <div class="project-container" onclick="showFeaturedProjectDetails('project2')">
                             <h4>Distant Planets Dream of You Too</h4>
                             <img src="assets/project_thumbnails/distantPlanets.jpg" alt="Project 2 Thumbnail"
                                 class="project-thumbnail" loading="lazy">
                         </div>
-                        <div class="project-container" onclick="showFeaturedProjectDetails('project3')">
-                            <h4>Temporal Tides</h4>
-                            <img src="assets/project_thumbnails/temporalTides.png" alt="Project 3 Thumbnail"
+                        <div class="project-container selected" onclick="showFeaturedProjectDetails('project5')">
+                            <h4>Visualization of 3D Point Clouds in VR</h4>
+                            <img src="assets/project_thumbnails/VRPointCloud.gif" alt="Project 5 Thumbnail"
                                 class="project-thumbnail" loading="lazy">
                         </div>
                         <div class="project-container" onclick="showFeaturedProjectDetails('project4')">
+                            <h4>Temporal Tides</h4>
+                            <img src="assets/project_thumbnails/temporalTides.png" alt="Project 4 Thumbnail"
+                                class="project-thumbnail" loading="lazy">
+                        </div>
+                        <div class="project-container" onclick="showFeaturedProjectDetails('project6')">
                             <h4>Dead West</h4>
-                            <img src="assets/project_thumbnails/deadWest.png" alt="Project 4 Thumbnail"
+                            <img src="assets/project_thumbnails/deadWest.png" alt="Project 6 Thumbnail"
+                                class="project-thumbnail" loading="lazy">
+                        </div>
+                        <div class="project-container" onclick="showFeaturedProjectDetails('project7')">
+                            <h4>Plus Music Graphic Video</h4>
+                            <img src="assets/project_thumbnails/plusMusic.png" alt="Project 7 Thumbnail"
                                 class="project-thumbnail" loading="lazy">
                         </div>
                     </div>
@@ -169,111 +179,7 @@
                             </div>
                         </div>
                     </div>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <h6>CLIENT PROJECTS</h6>
-                    <hr/>
-                    <div class="projects-view-container">
-                        <!-- Repeat this block for each project -->
-                        <div class="client-project-container selected" onclick="showClientProjectDetails('project1')">
-                            <h4>Sounds of the Depths</h4>
-                            <img src="assets/project_thumbnails/instrumentsOfTheDepths.png" alt="Project 1 Thumbnail"
-                                class="project-thumbnail" loading="lazy">
-                        </div>
-                        <div class="client-project-container" onclick="showClientProjectDetails('project2')">
-                            <h4>Plus Music Graphic Video</h4>
-                            <img src="assets/project_thumbnails/plusMusic.png" alt="Project 2 Thumbnail"
-                                class="project-thumbnail" loading="lazy">
-                        </div>
-                        <div class="client-project-container" onclick="showClientProjectDetails('project3')">
-                            <h4>Geoscience Interactive Visualization</h4>
-                            <img src="assets/project_thumbnails/geoscience.jpg" alt="Project 3 Thumbnail"
-                                class="project-thumbnail" loading="lazy">
-                        </div>
-                        <div class="client-project-container" onclick="showClientProjectDetails('project4')">
-                            <h4>ABC Stories</h4>
-                            <img src="assets/project_thumbnails/abcStories.png" alt="Project 4 Thumbnail"
-                                class="project-thumbnail" loading="lazy">
-                        </div>
-                    </div>
-                    <div class="project-details-container" id="project-details">
-                        <div class="row">
-                            <div class="col-md-6" id="project-details-showcase">
-                                <h4 class="client-project-details-title">Submeonic Drift</h4>
-                                <h5 class="client-project-details-subtitle">VR Arcade Racer | Present</h5>
-                                <div class="video-container">
-                                    <iframe class="client-project-details-video"
-                                        src="" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                                </div>
-                                <div class="buttons-container">
-                                    <button class="btn" id="client-project-repo-button" data-url="">Repository</button>
-                                    <button class="btn" id="client-project-try-button" data-url="">Try Now</button>
-                                </div>
-                            </div>
-                            <div class="col-md-6" id="project-details-text">
-                                <h5>Roles</h5>
-                                <p class="client-project-details-role"></p>
-                                <h5>Technical Stack</h5>
-                                <p class="client-project-details-stack"></p>
-                                <h5>Overview</h5>
-                                <p class="client-project-details-overview"></p>
-                                <h5>Contributors</h5>
-                                <p class="client-project-details-contributors"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <h6>RESEARCH PROJECTS</h6>
-                    <hr/>
-                    <div class="projects-view-container">
-                        <!-- Repeat this block for each project -->
-                        <div class="research-project-container selected" onclick="showResearchProjectDetails('project1')">
-                            <h4>Visualization of 3D Point Clouds in VR</h4>
-                            <img src="assets/project_thumbnails/VRPointCloud.gif" alt="Project 1 Thumbnail"
-                                class="project-thumbnail" loading="lazy">
-                        </div>
-                        <div class="research-project-container" onclick="showResearchProjectDetails('project2')">
-                            <h4>Dynamic Projection in Immersive Spaces</h4>
-                            <img src="assets/project_thumbnails/dynamicProjection.png" alt="Project 2 Thumbnail"
-                                class="project-thumbnail" loading="lazy">
-                        </div>
-                    </div>
-                    <div class="project-details-container" id="project-details">
-                        <div class="row">
-                            <div class="col-md-6" id="project-details-showcase">
-                                <h4 class="research-project-details-title">Visualization of 3D Point Clouds in VR</h4>
-                                <h5 class="research-project-details-subtitle">VR Arcade Racer | Present</h5>
-                                <div class="video-container">
-                                    <iframe class="research-project-details-video"
-                                        src="" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                                </div>
-                                <div class="buttons-container">
-                                    <button class="btn" id="research-project-repo-button" data-url="">Repository</button>
-                                </div>
-                            </div>
-                            <div class="col-md-6" id="project-details-text">
-                                <h5>Roles</h5>
-                                <p class="research-project-details-role"></p>
-                                <h5>Technical Stack</h5>
-                                <p class="research-project-details-stack"></p>
-                                <h5>Overview</h5>
-                                <p class="research-project-details-overview"></p>
-                                <h5>Contributors</h5>
-                                <p class="research-project-details-contributors"></p>
-                            </div>
-                        </div>
-                    </div>
+                </div>
             </section>
 
             <section id="art" class="py-5">
@@ -309,13 +215,13 @@
                     <h3>CONTACT</h3>
                     <div class="row" id="links-container">
                         <div class="col-md-6">
-                            <a href="assets/Resume_2024.pdf" class="social-link" download="ChaseFranklin_Resume.pdf">
+                            <a href="assets/ChaseFranklin_CV.pdf" class="social-link" download="ChaseFranklin_Resume.pdf">
                                 <i class="fa-solid fa-file-pdf"></i>
-                                Resume
+                                Resume/ CV
                             </a>
                             <a href="mailto:chasepfranklin@gmail.com" class="social-link">
                                 <i class="fa-solid fa-envelope"></i>
-                                Email: chasepfranklin@gmail.com
+                                chasepfranklin@gmail.com
                             </a>
                             <a href="https://linkedin.com/in/chase-franklin/" class="social-link">
                                 <i class="fa-brands fa-linkedin"></i>
@@ -419,8 +325,6 @@
     <!-- Load Initial Content View -->
     <script>
         showFeaturedProjectDetails('project1');
-        showClientProjectDetails('project1');
-        showResearchProjectDetails('project1');
     </script>
 </body>
 </html>
