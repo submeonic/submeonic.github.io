@@ -8,7 +8,7 @@ const InteractiveDesignProjectData = {
         roles: 'Designer, Programmer, 3D Artist',
         stack: 'Unity, C#, Blender',
         overview: 'In this VR training course for multiple states Fish & Game departments, I focused on creating realistic VR firearms, including a bolt action rifle and a break action shotgun. My contributions include designing intuitive and realistic firearm interactions tailored for users familiar with actual firearms but new to VR. I implemented features such as realistic reloading mechanics, a functional scope, safety toggles, and dynamic downrange detection for range safety. I also developed variable smoothing modes for different shooting postures and a "stock-lock" feature for enhanced stability. Additionally, I am creating a dynamic tutorial to guide users through these features.',
-        contributors: 'Individual',
+        contributors: 'GIMM Works Development Team',
         repositoryUrl: '',
         tryUrl: ''
     },
@@ -32,7 +32,7 @@ const InteractiveDesignProjectData = {
         roles: 'Researcher, Developer',
         stack: 'Unreal Engine 5, Unity, OpenCV, Kinect, ARKit',
         overview: 'This project explores dynamic projection techniques and evaluates pose estimation technologies in diverse display environments to enhance user interactivity in digital applications. By dynamically adjusting the virtual camera’s projection matrix based on the user’s head position, the project uses depth sensing with the Xbox Kinect and camera-based neural network pose estimation with OpenCV to create immersive spaces. Significant achievements include a custom projection matrix implementation in Unity, prototyping the "magic window" effect, and ideation with ARKit for mobile practicality. Challenges include depth camera placement and the system’s single-user limitation.',
-        contributors: 'Chase Franklin',
+        contributors: 'Individual',
         repositoryUrl: '',
         tryUrl: ''
     },
@@ -118,7 +118,7 @@ const GameDevelopmentProjectData = {
         roles: 'Designer, Programmer, 3D Artist',
         stack: 'Unity, C#, Blender',
         overview: 'In this VR training course for multiple states Fish & Game departments, I focused on creating realistic VR firearms, including a bolt action rifle and a break action shotgun. My contributions include designing intuitive and realistic firearm interactions tailored for users familiar with actual firearms but new to VR. I implemented features such as realistic reloading mechanics, a functional scope, safety toggles, and dynamic downrange detection for range safety. I also developed variable smoothing modes for different shooting postures and a "stock-lock" feature for enhanced stability. Additionally, I am creating a dynamic tutorial to guide users through these features.',
-        contributors: 'Individual',
+        contributors: 'GIMM Works Development Team',
         repositoryUrl: '',
         tryUrl: ''
     },
@@ -157,7 +157,7 @@ const ResearchProjectData = {
         roles: 'Researcher, Developer',
         stack: 'Unreal Engine 5, Unity, OpenCV, Kinect, ARKit',
         overview: 'This project explores dynamic projection techniques and evaluates pose estimation technologies in diverse display environments to enhance user interactivity in digital applications. By dynamically adjusting the virtual camera’s projection matrix based on the user’s head position, the project uses depth sensing with the Xbox Kinect and camera-based neural network pose estimation with OpenCV to create immersive spaces. Significant achievements include a custom projection matrix implementation in Unity, prototyping the "magic window" effect, and ideation with ARKit for mobile practicality. Challenges include depth camera placement and the system’s single-user limitation.',
-        contributors: 'Chase Franklin',
+        contributors: 'Individual',
         repositoryUrl: '',
         tryUrl: ''
     },
