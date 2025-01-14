@@ -113,44 +113,17 @@
                     <br/>
                     <h6>FEATURED PROJECTS</h6>
                     <hr/>
-                    <div class="projects-view-container">
-                        <!-- Repeat this block for each project -->
-                        <div class="project-container selected" onclick="showFeaturedProjectDetails('project1')">
-                            <h4>Submeonic Drift</h4>
-                            <img src="assets/project_thumbnails/submeonicDrift.png" alt="Project 1 Thumbnail"
-                                class="project-thumbnail" loading="lazy">
-                        </div>
-                        <div class="project-container" onclick="showFeaturedProjectDetails('project3')">
-                            <h4>Sounds of the Depths</h4>
-                            <img src="assets/project_thumbnails/instrumentsOfTheDepths.png" alt="Project 3 Thumbnail"
-                                class="project-thumbnail" loading="lazy">
-                        </div>
-                        <div class="project-container" onclick="showFeaturedProjectDetails('project2')">
-                            <h4>Distant Planets Dream of You Too</h4>
-                            <img src="assets/project_thumbnails/distantPlanets.jpg" alt="Project 2 Thumbnail"
-                                class="project-thumbnail" loading="lazy">
-                        </div>
-                        <div class="project-container selected" onclick="showFeaturedProjectDetails('project5')">
-                            <h4>Visualization of 3D Point Clouds in VR</h4>
-                            <img src="assets/project_thumbnails/VRPointCloud.gif" alt="Project 5 Thumbnail"
-                                class="project-thumbnail" loading="lazy">
-                        </div>
-                        <div class="project-container" onclick="showFeaturedProjectDetails('project4')">
-                            <h4>Temporal Tides</h4>
-                            <img src="assets/project_thumbnails/temporalTides.png" alt="Project 4 Thumbnail"
-                                class="project-thumbnail" loading="lazy">
-                        </div>
-                        <div class="project-container" onclick="showFeaturedProjectDetails('project6')">
-                            <h4>Dead West</h4>
-                            <img src="assets/project_thumbnails/deadWest.png" alt="Project 6 Thumbnail"
-                                class="project-thumbnail" loading="lazy">
-                        </div>
-                        <div class="project-container" onclick="showFeaturedProjectDetails('project7')">
-                            <h4>Plus Music Graphic Video</h4>
-                            <img src="assets/project_thumbnails/plusMusic.png" alt="Project 7 Thumbnail"
-                                class="project-thumbnail" loading="lazy">
-                        </div>
+                    <div class="container label-select-container">
+                        <label for="project-category" class="form-label">Select Category:</label>
+                        <select id="project-category" class="form-select">
+                            <option value="InteractiveDesignProjectData">Interactive Design</option>
+                            <option value="GameDevelopmentProjectData">Game Development</option>
+                            <option value="ResearchProjectData">Research Projects</option>
+                        </select>
                     </div>
+                    
+                    <div class="projects-view-container"></div>
+
                     <div class="project-details-container" id="project-details">
                         <div class="row">
                             <div class="col-md-6" id="project-details-showcase">
@@ -321,8 +294,8 @@
     </script>
 
     <!-- Load Initial Content View -->
-    <script>
+    <!-- <script>
         showFeaturedProjectDetails('project1');
-    </script>
+    </script> -->
 </body>
 </html>

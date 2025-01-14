@@ -478,5 +478,43 @@ a{
     padding-top: 20px;
 }
 
+.label-select-container {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center the items */
+    justify-content: center; /* Horizontally center the items */
+    gap: 10px; /* Add space between the label and the dropdown */
+    margin-bottom: 20px; /* Space below the container */
+}
+
+.form-label {
+    color: #EFEFDC; /* Light color for visibility */
+    font-family: "Overpass", sans-serif; /* Consistent font */
+    font-size: 18px; /* Size of the label */
+    font-weight: 600; /* Semi-bold for emphasis */
+}
+
+.form-select {
+    background-color: #333; /* Dark background */
+    color: #EFEFDC; /* Light text */
+    border: 2px solid #EFEFDC; /* Light border */
+    padding: 10px; /* Padding for better spacing */
+    border-radius: 5px; /* Rounded edges */
+    font-family: "Overpass", sans-serif; /* Consistent font */
+    font-size: 16px; /* Adjusted font size */
+    cursor: pointer; /* Pointer cursor for interaction */
+    width: auto; /* Adjust dropdown width as needed */
+}
+
+.form-select:hover {
+    background-color: #292929; /* Slightly lighter background on hover */
+    border-color: #B8B8A4; /* Highlight border on hover */
+}
+
+.form-select:focus {
+    outline: none; /* Remove default outline */
+    border-color: #EFEFDC; /* Maintain focus border color */
+    box-shadow: 0 0 10px rgba(239, 239, 220, 0.75); /* Subtle glow on focus */
+}
+
 
 
