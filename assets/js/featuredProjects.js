@@ -1,18 +1,7 @@
 
 const InteractiveDesignProjectData = {
+    
     'project1': {
-        title: "VR Hunter's Safety Training",
-        thumbnail: 'assets/project_thumbnails/huntersSafety.png',
-        subtitle: 'Interactive Firearms Training | In Progress',
-        videoUrl: 'https://www.youtube-nocookie.com/embed/zkMPfqy-dtA?modestbranding=1&rel=0&iv_load_policy=3&controls=1',
-        roles: 'Designer, Programmer, 3D Artist',
-        stack: 'Unity, C#, Blender',
-        overview: 'In this VR training course for multiple states Fish & Game departments, I focused on creating realistic VR firearms, including a bolt action rifle and a break action shotgun. My contributions include designing intuitive and realistic firearm interactions tailored for users familiar with actual firearms but new to VR. I implemented features such as realistic reloading mechanics, a functional scope, safety toggles, and dynamic downrange detection for range safety. I also developed variable smoothing modes for different shooting postures and a "stock-lock" feature for enhanced stability. Additionally, I am creating a dynamic tutorial to guide users through these features.',
-        contributors: 'GIMM Works Development Team',
-        repositoryUrl: '',
-        tryUrl: ''
-    },
-    'project2': {
         title: 'Submeonic Drift',
         thumbnail: 'assets/project_thumbnails/submeonicDrift.png',
         subtitle: 'VR Arcade Racer | Spring 2024',
@@ -24,7 +13,31 @@ const InteractiveDesignProjectData = {
         repositoryUrl: '',
         tryUrl: ''
     },
+    'project2': {
+        title: "VR Hunter's Safety Training",
+        thumbnail: 'assets/project_thumbnails/huntersSafety.png',
+        subtitle: 'Interactive Firearms Training | In Progress',
+        videoUrl: 'https://www.youtube-nocookie.com/embed/tC7aHE6SgFw?modestbranding=1&rel=0&iv_load_policy=3&controls=1',
+        roles: 'Designer, Programmer, 3D Artist',
+        stack: 'Unity, C#, Blender',
+        overview: 'In this VR training course for multiple states Fish & Game departments, I focused on creating realistic VR firearms, including a bolt action rifle and a break action shotgun. My contributions include designing intuitive and realistic firearm interactions tailored for users familiar with actual firearms but new to VR. I implemented features such as realistic reloading mechanics, a functional scope, safety toggles, and dynamic downrange detection for range safety. I also developed variable smoothing modes for different shooting postures and a "stock-lock" feature for enhanced stability. Additionally, I am creating a dynamic tutorial to guide users through these features.',
+        contributors: 'GIMM Works Development Team',
+        repositoryUrl: '',
+        tryUrl: 'https://sidequestvr.com/app/41817/fish-game-hunter-safety-vr'
+    },
     'project3': {
+        title: 'Colocation Mixed Reality Experience',
+        thumbnail: 'assets/project_thumbnails/colocationMR.png',
+        subtitle: 'Colocation Mixed Reality | In-Progress',
+        videoUrl: 'https://www.youtube-nocookie.com/embed/vthSlVyZ1tY?modestbranding=1&rel=0&iv_load_policy=3&controls=1',
+        roles: 'Researcher, Developer',
+        stack: 'Unity, MetaSDK, Mirror Networking',
+        overview: 'This project creates a colocation mixed reality experience using MetaSDK and Mirror Networking for LAN-based multiplayer, with automatic matchmaking via Bluetooth for the Meta Quest. Players interact in a miniature city sim, racing against each other, collecting items, and altering the environment with features like ramps and boost pads. Key achievements include multiplayer synchronization, real-time object manipulation, and dynamic city changes in mixed reality. Challenges include optimizing network performance and ensuring smooth synchronization across devices.',
+        contributors: 'Individual',
+        repositoryUrl: '',
+        tryUrl: ''
+    },
+    'project4': {
         title: 'Dynamic Projection and Immersive Spaces',
         thumbnail: 'assets/project_thumbnails/dynamicProjection.png',
         subtitle: 'Evaluating Pose Estimation Techniques | In-Progress',
@@ -36,7 +49,7 @@ const InteractiveDesignProjectData = {
         repositoryUrl: '',
         tryUrl: ''
     },
-    'project4': {
+    'project5': {
         title: 'Distant Planets Dream of You Too',
         thumbnail: 'assets/project_thumbnails/distantPlanets.jpg',
         subtitle: 'Gaze Interaction Comic | Spring 2023',
@@ -114,13 +127,13 @@ const GameDevelopmentProjectData = {
         title: "VR Hunter's Safety Training",
         thumbnail: 'assets/project_thumbnails/huntersSafety.png',
         subtitle: 'Interactive Firearms Training | In Progress',
-        videoUrl: 'https://www.youtube-nocookie.com/embed/zkMPfqy-dtA?modestbranding=1&rel=0&iv_load_policy=3&controls=1',
+        videoUrl: 'https://www.youtube-nocookie.com/embed/tC7aHE6SgFw?modestbranding=1&rel=0&iv_load_policy=3&controls=1',
         roles: 'Designer, Programmer, 3D Artist',
         stack: 'Unity, C#, Blender',
         overview: 'In this VR training course for multiple states Fish & Game departments, I focused on creating realistic VR firearms, including a bolt action rifle and a break action shotgun. My contributions include designing intuitive and realistic firearm interactions tailored for users familiar with actual firearms but new to VR. I implemented features such as realistic reloading mechanics, a functional scope, safety toggles, and dynamic downrange detection for range safety. I also developed variable smoothing modes for different shooting postures and a "stock-lock" feature for enhanced stability. Additionally, I am creating a dynamic tutorial to guide users through these features.',
         contributors: 'GIMM Works Development Team',
         repositoryUrl: '',
-        tryUrl: ''
+        tryUrl: 'https://sidequestvr.com/app/41817/fish-game-hunter-safety-vr'
     },
     'project6': {
         title: 'Dead West',
