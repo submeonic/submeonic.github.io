@@ -2,6 +2,18 @@
 const InteractiveDesignProjectData = {
     
     'project1': {
+        title: 'GIMM City — A Mixed Reality Co-Location Game',
+        thumbnail: 'assets/project_thumbnails/gimmCity.jpg',
+        subtitle: 'Colocation Mixed Reality | In-Progress',
+        videoUrl: 'https://www.youtube-nocookie.com/embed/Zzj_ixiaRts?modestbranding=1&rel=0&iv_load_policy=3&controls=1',
+        roles: 'Researcher, Developer',
+        stack: 'Unity, MetaSDK, Mirror Networking',
+        overview: 'This project showcases a mixed reality co-location game designed for the Meta Quest 3, developed as part of a senior capstone in the Games, Interactive Media & Mobile Technologies program at Boise State University. Set on a miniaturized version of the Boise State campus, the experience allows up to six players to race, build, and explore together in a shared physical space. Key features include a proximity-based spatial anchor system for automatic matchmaking and co-location, real-time object manipulation, and synchronized gameplay over local LAN. Major accomplishments include the creation of a fully open-source LAN co-location template and the development of XR interactables with smooth observer interpolation. Challenges involved managing shared object authority and maintaining network performance during simultaneous multi-user interaction.',
+        contributors: 'Individual',
+        repositoryUrl: 'https://github.com/submeonic/MixedRealityColocation_Template',
+        tryUrl: ''
+    },
+    'project2': {
         title: 'Submeonic Drift',
         thumbnail: 'assets/project_thumbnails/submeonicDrift.png',
         subtitle: 'VR Arcade Racer | Spring 2024',
@@ -13,7 +25,7 @@ const InteractiveDesignProjectData = {
         repositoryUrl: '',
         tryUrl: ''
     },
-    'project2': {
+    'project3': {
         title: "VR Hunter's Safety Training",
         thumbnail: 'assets/project_thumbnails/huntersSafety.png',
         subtitle: 'Interactive Firearms Training | In Progress',
@@ -24,18 +36,6 @@ const InteractiveDesignProjectData = {
         contributors: 'GIMM Works Development Team',
         repositoryUrl: '',
         tryUrl: 'https://sidequestvr.com/app/41817/fish-game-hunter-safety-vr'
-    },
-    'project3': {
-        title: 'Colocation Mixed Reality Experience',
-        thumbnail: 'assets/project_thumbnails/colocationMR.png',
-        subtitle: 'Colocation Mixed Reality | In-Progress',
-        videoUrl: 'https://www.youtube-nocookie.com/embed/vthSlVyZ1tY?modestbranding=1&rel=0&iv_load_policy=3&controls=1',
-        roles: 'Researcher, Developer',
-        stack: 'Unity, MetaSDK, Mirror Networking',
-        overview: 'This project creates a colocation mixed reality experience using MetaSDK and Mirror Networking for LAN-based multiplayer, with automatic matchmaking via Bluetooth for the Meta Quest. Players interact in a miniature city sim, racing against each other, collecting items, and altering the environment with features like ramps and boost pads. Key achievements include multiplayer synchronization, real-time object manipulation, and dynamic city changes in mixed reality. Challenges include optimizing network performance and ensuring smooth synchronization across devices.',
-        contributors: 'Individual',
-        repositoryUrl: '',
-        tryUrl: ''
     },
     'project4': {
         title: 'Dynamic Projection and Immersive Spaces',
@@ -75,6 +75,7 @@ const InteractiveDesignProjectData = {
 };
 
 const GameDevelopmentProjectData = {
+
     'project1': {
         title: 'Submeonic Drift',
         thumbnail: 'assets/project_thumbnails/submeonicDrift.png',
@@ -88,6 +89,18 @@ const GameDevelopmentProjectData = {
         tryUrl: ''
     },
     'project2': {
+        title: 'GIMM City — A Mixed Reality Co-Location Game',
+        thumbnail: 'assets/project_thumbnails/gimmCity.jpg',
+        subtitle: 'Colocation Mixed Reality | In-Progress',
+        videoUrl: 'https://www.youtube-nocookie.com/embed/Zzj_ixiaRts?modestbranding=1&rel=0&iv_load_policy=3&controls=1',
+        roles: 'Researcher, Developer',
+        stack: 'Unity, MetaSDK, Mirror Networking',
+        overview: 'This project showcases a mixed reality co-location game designed for the Meta Quest 3, developed as part of a senior capstone in the Games, Interactive Media & Mobile Technologies program at Boise State University. Set on a miniaturized version of the Boise State campus, the experience allows up to six players to race, build, and explore together in a shared physical space. Key features include a proximity-based spatial anchor system for automatic matchmaking and co-location, real-time object manipulation, and synchronized gameplay over local LAN. Major accomplishments include the creation of a fully open-source LAN co-location template and the development of XR interactables with smooth observer interpolation. Challenges involved managing shared object authority and maintaining network performance during simultaneous multi-user interaction.',
+        contributors: 'Individual',
+        repositoryUrl: 'https://github.com/submeonic/MixedRealityColocation_Template',
+        tryUrl: ''
+    },
+    'project3': {
         title: 'Temporal Tides',
         thumbnail: 'assets/project_thumbnails/temporalTides.png',
         subtitle: 'Paradox Naval Combat | Fall 2023',
@@ -99,7 +112,7 @@ const GameDevelopmentProjectData = {
         repositoryUrl: '',
         tryUrl: 'https://papadaplus.itch.io/temporal-tides'
     },
-    'project3': {
+    'project4': {
         title: 'Distant Planets Dream of You Too',
         thumbnail: 'assets/project_thumbnails/distantPlanets.jpg',
         subtitle: 'Gaze Interaction Comic | Spring 2023',
@@ -111,7 +124,7 @@ const GameDevelopmentProjectData = {
         repositoryUrl: 'https://github.com/submeonic/WebcamGazeInteractionComic',
         tryUrl: 'https://submeonic.itch.io/distant-planets-dream-of-you-too'
     },
-    'project4': {
+    'project5': {
         title: 'Sounds of the Depths',
         thumbnail: 'assets/project_thumbnails/instrumentsOfTheDepths.png',
         subtitle: 'Ability Platformer | Fall 2023',
@@ -123,7 +136,7 @@ const GameDevelopmentProjectData = {
         repositoryUrl: '',
         tryUrl: ''
     },
-    'project5': {
+    'project6': {
         title: "VR Hunter's Safety Training",
         thumbnail: 'assets/project_thumbnails/huntersSafety.png',
         subtitle: 'Interactive Firearms Training | In Progress',
@@ -135,7 +148,7 @@ const GameDevelopmentProjectData = {
         repositoryUrl: '',
         tryUrl: 'https://sidequestvr.com/app/41817/fish-game-hunter-safety-vr'
     },
-    'project6': {
+    'project7': {
         title: 'Dead West',
         thumbnail: 'assets/project_thumbnails/deadWest.png',
         subtitle: 'Interactive Animation | Spring 2023',
@@ -296,6 +309,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     initialLoad();
+
+    document.getElementById('project-repo-button').addEventListener('click', function () {
+        const url = this.dataset.url;
+        if (url && url !== '#') {
+            window.open(url, '_blank');
+        }
+    });
+
+    document.getElementById('project-try-button').addEventListener('click', function () {
+        const url = this.dataset.url;
+        if (url && url !== '#') {
+            window.open(url, '_blank');
+        }
+    });
 });
 
 
