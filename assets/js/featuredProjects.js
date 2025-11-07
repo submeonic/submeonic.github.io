@@ -4,14 +4,14 @@ const InteractiveDesignProjectData = {
     'project1': {
         title: 'GIMM City — A Mixed Reality Co-Location Game',
         thumbnail: 'assets/project_thumbnails/gimmCity.jpg',
-        subtitle: 'Colocation Mixed Reality | In-Progress',
+        subtitle: 'Colocation Mixed Reality | Spring 2025',
         videoUrl: 'https://www.youtube-nocookie.com/embed/Zzj_ixiaRts?modestbranding=1&rel=0&iv_load_policy=3&controls=1',
-        roles: 'Researcher, Developer',
+        roles: 'Capstone Team Leader, Developer',
         stack: 'Unity, MetaSDK, Mirror Networking',
         overview: 'This project showcases a mixed reality co-location game designed for the Meta Quest 3, developed as part of a senior capstone in the Games, Interactive Media & Mobile Technologies program at Boise State University. Set on a miniaturized version of the Boise State campus, the experience allows up to six players to race, build, and explore together in a shared physical space. Key features include a proximity-based spatial anchor system for automatic matchmaking and co-location, real-time object manipulation, and synchronized gameplay over local LAN. Major accomplishments include the creation of a fully open-source LAN co-location template and the development of XR interactables with smooth observer interpolation. Challenges involved managing shared object authority and maintaining network performance during simultaneous multi-user interaction.',
-        contributors: 'Individual',
+        contributors: 'Capstone Team: Konner Pierce, Heaven Rust, Carson Strout, Jacob Thrall',
         repositoryUrl: 'https://github.com/submeonic/MixedRealityColocation_Template',
-        tryUrl: ''
+        tryUrl: 'https://sidequestvr.com/app/44570/gimm-city'
     },
     'project2': {
         title: 'Submeonic Drift',
@@ -28,8 +28,8 @@ const InteractiveDesignProjectData = {
     'project3': {
         title: "VR Hunter's Safety Training",
         thumbnail: 'assets/project_thumbnails/huntersSafety.png',
-        subtitle: 'Interactive Firearms Training | In Progress',
-        videoUrl: 'https://www.youtube-nocookie.com/embed/tC7aHE6SgFw?modestbranding=1&rel=0&iv_load_policy=3&controls=1',
+        subtitle: 'Interactive Firearms Training | Spring 2025',
+        videoUrl: 'https://www.youtube-nocookie.com/embed/1kXxH0J6MfA?modestbranding=1&rel=0&iv_load_policy=3&controls=1',
         roles: 'Designer, Programmer, 3D Artist',
         stack: 'Unity, C#, Blender',
         overview: 'In this VR training course for multiple states Fish & Game departments, I focused on creating realistic VR firearms, including a bolt action rifle and a break action shotgun. My contributions include designing intuitive and realistic firearm interactions tailored for users familiar with actual firearms but new to VR. I implemented features such as realistic reloading mechanics, a functional scope, safety toggles, and dynamic downrange detection for range safety. I also developed variable smoothing modes for different shooting postures and a "stock-lock" feature for enhanced stability. Additionally, I am creating a dynamic tutorial to guide users through these features.',
@@ -40,7 +40,7 @@ const InteractiveDesignProjectData = {
     'project4': {
         title: 'Dynamic Projection and Immersive Spaces',
         thumbnail: 'assets/project_thumbnails/dynamicProjection.png',
-        subtitle: 'Evaluating Pose Estimation Techniques | In-Progress',
+        subtitle: 'Evaluating Pose Estimation Techniques | Spring 2025',
         videoUrl: 'https://www.youtube-nocookie.com/embed/h_kk7_rZtFA?modestbranding=1&rel=0&iv_load_policy=3&controls=1',
         roles: 'Researcher, Developer',
         stack: 'Unreal Engine 5, Unity, OpenCV, Kinect, ARKit',
@@ -91,12 +91,12 @@ const GameDevelopmentProjectData = {
     'project2': {
         title: 'GIMM City — A Mixed Reality Co-Location Game',
         thumbnail: 'assets/project_thumbnails/gimmCity.jpg',
-        subtitle: 'Colocation Mixed Reality | In-Progress',
+        subtitle: 'Colocation Mixed Reality | Spring 2025',
         videoUrl: 'https://www.youtube-nocookie.com/embed/Zzj_ixiaRts?modestbranding=1&rel=0&iv_load_policy=3&controls=1',
-        roles: 'Researcher, Developer',
+        roles: 'Capstone Team Leader, Developer',
         stack: 'Unity, MetaSDK, Mirror Networking',
         overview: 'This project showcases a mixed reality co-location game designed for the Meta Quest 3, developed as part of a senior capstone in the Games, Interactive Media & Mobile Technologies program at Boise State University. Set on a miniaturized version of the Boise State campus, the experience allows up to six players to race, build, and explore together in a shared physical space. Key features include a proximity-based spatial anchor system for automatic matchmaking and co-location, real-time object manipulation, and synchronized gameplay over local LAN. Major accomplishments include the creation of a fully open-source LAN co-location template and the development of XR interactables with smooth observer interpolation. Challenges involved managing shared object authority and maintaining network performance during simultaneous multi-user interaction.',
-        contributors: 'Individual',
+        contributors: 'Capstone Team: Konner Pierce, Heaven Rust, Carson Strout, Jacob Thrall',
         repositoryUrl: 'https://github.com/submeonic/MixedRealityColocation_Template',
         tryUrl: ''
     },
@@ -139,13 +139,13 @@ const GameDevelopmentProjectData = {
     'project6': {
         title: "VR Hunter's Safety Training",
         thumbnail: 'assets/project_thumbnails/huntersSafety.png',
-        subtitle: 'Interactive Firearms Training | In Progress',
-        videoUrl: 'https://www.youtube-nocookie.com/embed/tC7aHE6SgFw?modestbranding=1&rel=0&iv_load_policy=3&controls=1',
+        subtitle: 'Interactive Firearms Training | Spring 2025',
+        videoUrl: 'https://www.youtube-nocookie.com/embed/1kXxH0J6MfA?modestbranding=1&rel=0&iv_load_policy=3&controls=1',
         roles: 'Designer, Programmer, 3D Artist',
         stack: 'Unity, C#, Blender',
         overview: 'In this VR training course for multiple states Fish & Game departments, I focused on creating realistic VR firearms, including a bolt action rifle and a break action shotgun. My contributions include designing intuitive and realistic firearm interactions tailored for users familiar with actual firearms but new to VR. I implemented features such as realistic reloading mechanics, a functional scope, safety toggles, and dynamic downrange detection for range safety. I also developed variable smoothing modes for different shooting postures and a "stock-lock" feature for enhanced stability. Additionally, I am creating a dynamic tutorial to guide users through these features.',
         contributors: 'GIMM Works Development Team',
-        repositoryUrl: '',
+        repositoryUrl: 'https://sidequestvr.com/app/44570/gimm-city',
         tryUrl: 'https://sidequestvr.com/app/41817/fish-game-hunter-safety-vr'
     },
     'project7': {
@@ -166,7 +166,7 @@ const ResearchProjectData = {
     'project1': {
         title: 'Visualization of 3D Point Clouds in VR',
         thumbnail: 'assets/project_thumbnails/VRPointCloud.gif',
-        subtitle: 'Rendering Technique Research | Under Review for IEEE VR 2024',
+        subtitle: 'Rendering Technique Research | Under Review for IEEE VR 2025',
         videoUrl: 'https://www.youtube-nocookie.com/embed/u4NaMHy6hY4?modestbranding=1&rel=0&iv_load_policy=3&controls=1',
         roles: 'Primary Author, Sole Developer, Data Set Constructor',
         stack: 'Unreal Engine, Niagara Particle System, NeRF Studio, CloudCompare, Meshlab, C++, UE Blueprints, Python',
@@ -178,7 +178,7 @@ const ResearchProjectData = {
     'project2': {
         title: 'Dynamic Projection and Immersive Spaces',
         thumbnail: 'assets/project_thumbnails/dynamicProjection.png',
-        subtitle: 'Evaluating Pose Estimation Techniques | In-Progress',
+        subtitle: 'Evaluating Pose Estimation Techniques | Spring 2025',
         videoUrl: 'https://www.youtube-nocookie.com/embed/h_kk7_rZtFA?modestbranding=1&rel=0&iv_load_policy=3&controls=1',
         roles: 'Researcher, Developer',
         stack: 'Unreal Engine 5, Unity, OpenCV, Kinect, ARKit',
